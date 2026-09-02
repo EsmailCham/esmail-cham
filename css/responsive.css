@@ -1,0 +1,352 @@
+/* ==========================================================================
+   اسماعیل چام — responsive.css
+   Breakpoints: laptop 1439–1024 · tablet 1023–768 · mobile 767–320
+   ========================================================================== */
+
+/* ---------- Laptop & below ---------- */
+@media (max-width: 1439px) {
+  :root {
+    --container: 1080px;
+  }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1023px) {
+  :root {
+    --header-h: 68px;
+  }
+
+  .section {
+    padding-block: 72px;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .product-info {
+    position: static;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 767px) {
+  :root {
+    --header-h: 62px;
+  }
+
+  body {
+    font-size: 15.5px;
+  }
+
+  .container {
+    padding-inline: 18px;
+  }
+
+  .section {
+    padding-block: 56px;
+  }
+
+  /* Touch targets ≥ 44px */
+  .icon-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+
+  .section-title {
+    font-size: clamp(1.3rem, 6.4vw, 1.8rem);
+  }
+
+  /* Header: switch nav to burger */
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: grid;
+  }
+
+  .brand-tag {
+    display: none;
+  }
+
+  .brand-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--header-h) + 40px);
+    padding-bottom: 88px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .hero-headline {
+    font-size: 1.12rem;
+  }
+
+  .hero-desc {
+    font-size: 0.96rem;
+  }
+
+  .hero-cta {
+    width: 100%;
+  }
+
+  .hero-cta .btn {
+    flex: 1;
+    justify-content: center;
+    min-height: 48px;
+  }
+
+  .hero-kicker {
+    font-size: 0.78rem;
+    padding: 7px 14px;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  /* Cards */
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Toolbar stacks */
+  .toolbar-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    max-width: none;
+  }
+
+  .search-box input {
+    min-height: 46px;
+    font-size: 16px; /* جلوگیری از زوم خودکار iOS هنگام فوکوس */
+  }
+
+  .filter-group {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-group::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    padding: 9px 18px;
+    min-height: 40px;
+  }
+
+  .sort-box {
+    margin-inline-start: 0;
+    align-self: flex-start;
+  }
+
+  .sort-box select {
+    min-height: 46px;
+    font-size: 16px; /* جلوگیری از زوم iOS */
+  }
+
+  /* Detail page */
+  .product-hero {
+    padding-block: 24px 12px;
+  }
+
+  .product-title {
+    font-size: 1.45rem;
+  }
+
+  .product-info {
+    gap: 14px;
+  }
+
+  .product-thumbs {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .product-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-meta > div {
+    padding: 12px 14px;
+  }
+
+  .product-meta > div:nth-child(3) {
+    grid-column: 1 / -1;
+    border-inline-start: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .product-actions .btn {
+    min-height: 50px;
+  }
+
+  .product-section h2 {
+    font-size: 1.15rem;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .feature-list li {
+    padding-block: 13px;
+  }
+
+  .theme-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .breadcrumb {
+    flex-wrap: wrap;
+    padding-top: calc(var(--header-h) + 20px);
+    font-size: 0.78rem;
+  }
+
+  .cta-band {
+    padding: 56px 20px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-block: 48px 36px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 13px 20px;
+  }
+
+  /* Mobile menu کامل‌صفحه و لمس‌پذیر */
+  .mobile-menu .m-link {
+    font-size: 1.3rem;
+    padding: 16px 4px;
+  }
+
+  /* حذف هاورهای معلق در لمس */
+  .product-card:hover,
+  .category-card:hover,
+  .theme-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .product-card:hover .card-media img,
+  .theme-card:hover img {
+    transform: none;
+  }
+}
+
+/* ---------- Small mobile ---------- */
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .card-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .product-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .product-meta > div + div {
+    border-inline-start: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+}
+
+/* ---------- لمس: غیرفعال‌سازی افکت‌های هاور-desktop ---------- */
+@media (hover: none) and (pointer: coarse) {
+  .product-card:hover,
+  .category-card:hover,
+  .theme-card:hover,
+  .feature:hover,
+  .stat:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .product-card:hover .card-media img,
+  .theme-card:hover img {
+    transform: none;
+  }
+
+  .product-card:hover .card-media::after {
+    opacity: 0;
+  }
+}
+
+/* ---------- Large desktop ---------- */
+@media (min-width: 1600px) {
+  :root {
+    --container: 1240px;
+  }
+}

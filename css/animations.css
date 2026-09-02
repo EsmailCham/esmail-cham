@@ -1,0 +1,82 @@
+/* ==========================================================================
+   اسماعیل چام — animations.css
+   Keyframes · Reveal states · GSAP helpers · Reduced motion
+   ========================================================================== */
+
+/* ---------- Keyframes ---------- */
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(0.75); opacity: 0.7; }
+}
+
+@keyframes scroll-hint {
+  0% { top: -40%; }
+  60%, 100% { top: 110%; }
+}
+
+@keyframes loader-slide {
+  0% { transform: translateX(240%); }
+  100% { transform: translateX(-260%); }
+}
+
+/* حالت بدون جاوااسکریپت: لودر نمایش داده نشود */
+.no-js .loader,
+.no-js .page-transition {
+  display: none;
+}
+
+/* Heading word reveal (used when GSAP splits text) */
+.split-word {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* ---------- Light theme softening ---------- */
+[data-theme='light'] .hero-bg {
+  opacity: 0.8;
+}
+
+[data-theme='light'] .hero-orb {
+  opacity: 0.6;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .js [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-orb {
+    animation: none !important;
+  }
+
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+
+  .loader,
+  .page-transition {
+    display: none !important;
+  }
+}
+
+/* ---------- Reveal-on-scroll fallback for browsers without GSAP ---------- */
+@supports not (backdrop-filter: blur(1px)) {
+  .site-header.is-scrolled {
+    background: var(--bg);
+  }
+}

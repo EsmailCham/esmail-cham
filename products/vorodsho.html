@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورودشو | اسماعیل چام</title>
+  <meta name="description" content="قالب HTML احراز هویت با ۵ تم حرفه‌ای فارسی؛ ورود، ثبت‌نام، بازیابی رمز و پنل مدیریت در یک پکیج.">
+  <link rel="canonical" href="./vorodsho.html">
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="ورودشو | اسماعیل چام">
+  <meta property="og:description" content="۵ تم حرفه‌ای احراز هویت فارسی در یک قالب HTML؛ سوییچ لحظه‌ای تم، پنل مدیریت یکپارچه و ساختار ماژولار.">
+  <meta property="og:image" content="../assets/images/vorodsho/vorodsho-01.png">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-slug="vorodsho">
+  <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-logo">
+      <span class="mark">ESMAIL CHAM</span>
+      <span class="bar"></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="اسماعیل چام — صفحه اصلی">
+        <span class="brand-avatar">
+          <img src="https://uploadkon.ir/uploads/c16e01_26profil.png" alt="آواتار اسماعیل چام" width="42" height="42">
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">اسماعیل چام</span>
+          <span class="brand-tag">WordPress &bull; HTML &bull; Scripts</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="ناوبری اصلی">
+        <a class="nav-link" href="../index.html">خانه</a>
+        <a class="nav-link" href="../products.html" aria-current="page">محصولات</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" data-theme-toggle aria-label="تغییر حالت روشن و تاریک">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn burger" id="burgerBtn" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobileMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="منوی موبایل">
+    <button class="icon-btn" id="menuClose" aria-label="بستن منو">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <nav aria-label="ناوبری موبایل">
+      <a class="m-link" style="--i:1" href="../index.html">خانه
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </a>
+      <a class="m-link" style="--i:2" href="../products.html" aria-current="page">محصولات
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <span>WordPress &bull; HTML &bull; Scripts</span>
+      <span>&copy; 2026 Esmail Cham</span>
+    </div>
+  </div>
+
+  <main id="main" class="container">
+    <nav class="breadcrumb" aria-label="مسیر صفحه">
+      <a href="../index.html">خانه</a>
+      <span class="sep">/</span>
+      <a href="../products.html">محصولات</a>
+      <span class="sep">/</span>
+      <span id="crumbCurrent" aria-current="page">ورودشو</span>
+    </nav>
+
+    <section class="product-hero">
+      <div class="product-gallery" data-reveal>
+        <div class="product-gallery-main">
+          <img id="galleryMain" src="../assets/images/vorodsho/vorodsho-01.png" alt="پیش‌نمایش ورودشو" width="1200" height="750" decoding="async">
+        </div>
+        <div class="product-thumbs" id="galleryThumbs"></div>
+      </div>
+
+      <div class="product-info" data-reveal>
+        <span class="chip" id="pCategory">قالب HTML</span>
+        <h1 class="product-title" id="pTitle">ورودشو</h1>
+        <p class="product-short" id="pShort"></p>
+
+        <dl class="product-meta">
+          <div>
+            <dt>قیمت</dt>
+            <dd id="pPrice"></dd>
+          </div>
+          <div>
+            <dt>نسخه</dt>
+            <dd id="pVersion">—</dd>
+          </div>
+          <div>
+            <dt>آخرین بروزرسانی</dt>
+            <dd id="pDate">—</dd>
+          </div>
+        </dl>
+
+        <div class="product-actions">
+          <a class="btn btn-primary btn-lg btn-block" id="pBuy" href="#" target="_blank" rel="noopener">
+            خرید از راست‌چین
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-block" id="pDemo" href="#" target="_blank" rel="noopener">
+            مشاهده دمو
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </a>
+        </div>
+
+        <div class="product-tags" id="pTags"></div>
+      </div>
+    </section>
+
+    <div class="product-sections">
+      <section class="product-section" data-reveal>
+        <h2>ورودشو چیست؟</h2>
+        <p class="product-long" id="pLong">
+          ورودشو یک قالب HTML کاملاً فرانت‌اند برای صفحات احراز هویت است: ورود، ثبت‌نام، بازیابی رمز عبور و پنل مدیریت — همه در یک پکیج با ۵ تم آماده و کاملاً متفاوت. کاربر با یک کلیک بین تم‌ها جابه‌جا می‌شود، انتخابش به‌صورت خودکار در تمام صفحات اعمال می‌گردد و شما به جای طراحی چند صفحه از صفر، یک سیستم کامل و حرفه‌ای تحویل می‌گیرید. ساختار ماژولار و تفکیک‌شده کد، شخصی‌سازی هر تم را به کاری چند دقیقه‌ای تبدیل می‌کند.
+        </p>
+      </section>
+
+      <section class="product-section" data-reveal>
+        <h2>۵ تم، یک قالب</h2>
+        <p class="product-long" style="margin-bottom: 24px;">
+          هر تم یک هویت بصری مستقل دارد؛ از چیدمان بنتو پریمیوم تا گلس‌مورفیسم بنفش. همه تم‌ها راست‌چین، واکنش‌گرا و دارای حالت روشن و تاریک‌اند.
+        </p>
+        <div class="theme-grid">
+          <article class="theme-card">
+            <img src="../assets/images/vorodsho/vorodsho-01.png" alt="تم بنتو — صفحه ورود" loading="lazy" decoding="async" width="800" height="500">
+            <div class="theme-card-body">
+              <h3>بنتو پرمیوم</h3>
+              <p>چیدمان بنتو، کارت‌های شیشه‌ای و آبی نئونی؛ مدرن‌ترین چهره قالب.</p>
+            </div>
+          </article>
+          <article class="theme-card">
+            <img src="../assets/images/vorodsho/vorodsho-04.png" alt="تم کلاسیک — صفحه ورود" loading="lazy" decoding="async" width="800" height="500">
+            <div class="theme-card-body">
+              <h3>کلاسیک شرکتی</h3>
+              <p>ظاهر رسمی و سازمانی با پنل تنظیمات؛ مناسب سایت‌های شرکتی و سازمانی.</p>
+            </div>
+          </article>
+          <article class="theme-card">
+            <img src="../assets/images/vorodsho/vorodsho-07.png" alt="تم مینیمال — صفحه ورود" loading="lazy" decoding="async" width="800" height="500">
+            <div class="theme-card-body">
+              <h3>مینیمال تیره</h3>
+              <p>سبک، تیره و کاملاً متمرکز بر فرم؛ برای محصولاتی که سادگی را جدی می‌گیرند.</p>
+            </div>
+          </article>
+          <article class="theme-card">
+            <img src="../assets/images/vorodsho/vorodsho-10.png" alt="تم ساس — صفحه ورود" loading="lazy" decoding="async" width="800" height="500">
+            <div class="theme-card-body">
+              <h3>ساس مدرن</h3>
+              <p>استایل محصول‌های SaaS با پنل تنظیمات کامل و تجربه‌ای آشنا برای کاربران.</p>
+            </div>
+          </article>
+          <article class="theme-card">
+            <img src="../assets/images/vorodsho/vorodsho-13.png" alt="تم اتریک گلس — صفحه ورود" loading="lazy" decoding="async" width="800" height="500">
+            <div class="theme-card-body">
+              <h3>اتریک گلس</h3>
+              <p>گلمورفیسم بنفش پریمیوم با کنسول مدیریت؛ لوکس و به‌یادماندنی.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="product-section" data-reveal>
+        <h2>ویژگی‌ها</h2>
+        <ul class="feature-list" id="pFeatures"></ul>
+      </section>
+
+      <section class="product-section" data-reveal>
+        <h2>تکنولوژی‌ها</h2>
+        <div class="tech-list" id="pTech"></div>
+      </section>
+
+      <section class="product-section" data-reveal>
+        <h2>خرید و دمو</h2>
+        <div class="product-actions product-actions--narrow">
+          <a class="btn btn-primary btn-lg btn-block" id="pBuyBottom" href="#" target="_blank" rel="noopener">
+            خرید از راست‌چین
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-block" id="pDemoBottom" href="#" target="_blank" rel="noopener">
+            مشاهده دمو
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="../index.html">
+            <span class="brand-avatar">
+              <img src="https://uploadkon.ir/uploads/c16e01_26profil.png" alt="آواتار اسماعیل چام" width="42" height="42" loading="lazy">
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">اسماعیل چام</span>
+              <span class="brand-tag">WordPress &bull; HTML &bull; Scripts</span>
+            </span>
+          </a>
+          <p class="footer-desc">طراح قالب وردپرس، اسکریپت و قالب HTML؛ ساخت محصولات دیجیتال مدرن با تمرکز بر کیفیت و تجربه کاربری.</p>
+        </div>
+        <div>
+          <h3 class="footer-title">ناوبری</h3>
+          <ul class="footer-list">
+            <li><a href="../index.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              خانه</a></li>
+            <li><a href="../products.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              محصولات</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">دسته‌بندی‌ها</h3>
+          <ul class="footer-list" id="footerCats"></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2026 Esmail Cham. All rights reserved.</span>
+        <span>طراحی و توسعه با دقت و علاقه</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="page-transition" id="pageTransition" aria-hidden="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/product.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>
