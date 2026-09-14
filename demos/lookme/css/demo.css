@@ -1,0 +1,111 @@
+/* ==========================================================================
+   LookMe demos — demo chrome (نوار دمو؛ بخشی از خود قالب نیست)
+   فقط برای صفحات دموی استاتیک: نوار ابزار، انتخابگر فونت، جابجایی فضا
+   ========================================================================== */
+
+/* فضای بالای صفحه برای نوار دموی ثابت (همیشه تک‌ردیفی) */
+body { --lmdemo-h: 52px; padding-top: var(--lmdemo-h); }
+
+.lm-demo-bar {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  z-index: 1600; /* بالای هدر قالب (1200) */
+  background: #241A12;
+  color: #F7F2E9;
+  box-shadow: 0 6px 24px -12px rgba(0, 0, 0, .5);
+}
+[data-theme="dark"] .lm-demo-bar { background: #0F0A15; border-bottom: 1px solid rgba(245, 238, 228, .08); }
+
+.lm-demo-bar__inner {
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 16px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px 12px;
+  direction: rtl;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.lm-demo-bar__inner::-webkit-scrollbar { display: none; }
+.lm-demo-bar__inner > * { flex: none; }
+
+.lm-db__label {
+  font-size: .78rem;
+  font-weight: 600;
+  color: rgba(247, 242, 233, .62);
+  white-space: nowrap;
+}
+
+.lm-db__sep {
+  width: 1px;
+  height: 22px;
+  background: rgba(247, 242, 233, .16);
+  flex: none;
+}
+
+.lm-db__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(247, 242, 233, .25);
+  color: #F7F2E9;
+  font-size: .8rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .25s ease, border-color .25s ease, transform .25s ease;
+}
+.lm-db__btn:hover { background: rgba(247, 242, 233, .1); border-color: rgba(247, 242, 233, .5); transform: translateY(-1px); }
+.lm-db__btn--solid { background: #C24141; border-color: #C24141; }
+.lm-db__btn--solid:hover { background: #D45454; border-color: #D45454; }
+.lm-db__btn .lm-db__ic { width: 14px; height: 14px; flex: none; }
+
+.lm-db__group {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+.lm-db__group [data-font] {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(247, 242, 233, .2);
+  background: transparent;
+  color: rgba(247, 242, 233, .8);
+  font-size: .78rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .25s ease, color .25s ease, border-color .25s ease;
+}
+.lm-db__group [data-font]:hover { color: #F7F2E9; border-color: rgba(247, 242, 233, .45); }
+.lm-db__group [data-font].is-active {
+  background: #C24141;
+  border-color: #C24141;
+  color: #fff;
+}
+
+/* هدر قالب زیر نوار دمو */
+.site-header { top: var(--lmdemo-h); }
+
+/* در صفحه‌های باریک: برچسب‌های توضیحی مخفی، فقط ابزارها می‌مانند */
+@media (max-width: 1180px) {
+  .lm-db__label--desc { display: none; }
+}
+@media (max-width: 760px) {
+  .lm-db__label--fonts { display: none; }
+  .lm-db__sep { display: none; }
+  .lm-db__btn span { display: none; } /* فقط آیکون دکمه‌ها */
+  .lm-db__btn { padding: 7px 11px; }
+}
+
+/* در دمو، فاصله اولین سکشن از پیش‌فرض قالب استفاده می‌کند؛
+   نوار demo + هدر روی سکشن اول (cine/hero) fixed هستند و خود قالب
+   برای این دو سکشن full-height طراحی شده — تداخلی ایجاد نمی‌شود. */
