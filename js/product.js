@@ -101,8 +101,20 @@
     const thumbs = $('#galleryThumbs');
     if (mainImg && thumbs && p.gallery && p.gallery.length) {
       const base = '../';
+
+      /* نسبت‌ابعاد فریم با هر تصویر هماهنگ می‌شود تا لبه‌های تصویر بریده نشود */
+      const fitFrame = () => {
+        const w = mainImg.naturalWidth;
+        const h = mainImg.naturalHeight;
+        if (!w || !h) return;
+        const ratio = Math.min(2.2, Math.max(1.25, w / h));
+        mainImg.parentElement.style.aspectRatio = String(ratio);
+      };
+      mainImg.addEventListener('load', fitFrame);
+
       mainImg.src = base + p.gallery[0];
       mainImg.alt = `پیش‌نمایش ${p.title}`;
+      if (mainImg.complete) fitFrame();
       thumbs.innerHTML = p.gallery
         .map(
           (src, i) =>

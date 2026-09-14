@@ -219,6 +219,20 @@
     }
   };
 
+  /* ---------- هماهنگی قاب کارت با نسبت‌ابعاد واقعی تصویر (بدون بریدن لبه‌ها) ---------- */
+  document.addEventListener(
+    'load',
+    (e) => {
+      const img = e.target;
+      if (!(img instanceof HTMLImageElement)) return;
+      const media = img.closest('.card-media');
+      if (!media || !img.naturalWidth || !img.naturalHeight) return;
+      const ratio = Math.min(2.2, Math.max(1.25, img.naturalWidth / img.naturalHeight));
+      media.style.aspectRatio = String(ratio);
+    },
+    true
+  );
+
   /* ---------- صفحه اصلی: محصولات منتخب، دسته‌ها و لینک جدیدترین ---------- */
   const Home = {
     init() {

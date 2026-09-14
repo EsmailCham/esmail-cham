@@ -10,48 +10,48 @@
 const PRODUCTS = [
   {
     id: 1,
-    title: 'ورودشو',
-    slug: 'vorodsho',
-    category: 'html',
-    categoryLabel: 'قالب HTML',
-    description: 'قالب HTML احراز هویت با ۵ تم حرفه‌ای فارسی؛ ورود، ثبت‌نام، بازیابی رمز و پنل مدیریت در یک پکیج.',
-    price: 997000,
-    thumbnail: 'assets/images/vorodsho/poster-cover.jpg',
+    title: 'قالب لوک‌می',
+    slug: 'lookme',
+    category: 'wordpress',
+    categoryLabel: 'قالب وردپرس',
+    description: 'قالب وردپرس تک‌صفحه‌ای لوک‌می؛ حالت تاریک و روشن، ۱۷ فونت فارسی، نمونه‌کار با فیلتر، گالری درگ‌پذیر و فرم تماس آجاکسی — بدون حتی یک خط کد.',
+    price: 1498000,
+    thumbnail: 'assets/images/lookme/poster-cover.jpg',
     gallery: [
-      'assets/images/vorodsho/vorodsho-01.png',
-      'assets/images/vorodsho/vorodsho-02.png',
-      'assets/images/vorodsho/vorodsho-03.png',
-      'assets/images/vorodsho/vorodsho-04.png',
-      'assets/images/vorodsho/vorodsho-05.png',
-      'assets/images/vorodsho/vorodsho-06.png',
-      'assets/images/vorodsho/vorodsho-07.png',
-      'assets/images/vorodsho/vorodsho-08.png',
-      'assets/images/vorodsho/vorodsho-09.png',
-      'assets/images/vorodsho/vorodsho-10.png',
-      'assets/images/vorodsho/vorodsho-11.png',
-      'assets/images/vorodsho/vorodsho-12.png',
-      'assets/images/vorodsho/vorodsho-13.png',
-      'assets/images/vorodsho/vorodsho-14.png',
-      'assets/images/vorodsho/vorodsho-15.png'
+      'assets/images/lookme/poster-cover.jpg',
+      'assets/images/lookme/r1.jpg',
+      'assets/images/lookme/r2.jpg',
+      'assets/images/lookme/r3.jpg',
+      'assets/images/lookme/r4.jpg'
     ],
-    demoUrl: 'demos/vorodsho/index.html', // مستقیم به فایل ایندکس؛ لینک پوشه روی file:// لیست پوشه نشان می‌دهد
+    demoUrl: 'demos/lookme/index.html', // مستقیم به فایل ایندکس؛ لینک پوشه روی file:// لیست پوشه نشان می‌دهد
     // TODO: لینک مستقیم صفحه محصول در rtl-theme.com را وقتی منتشر شد جایگزین کنید
     rightchinUrl: 'https://www.rtl-theme.com/',
     featured: true,
-    date: '2026-09-02',
-    version: '2.0.0', // TODO: شماره نسخه واقعی را تنظیم کنید
-    tags: ['HTML', 'احراز هویت', '۵ تم', 'RTL'],
+    date: '2026-09-10',
+    version: '1.6.8',
+    tags: ['وردپرس', 'تک‌صفحه‌ای', 'المنتور', 'RTL', '۱۷ فونت فارسی'],
     features: [
-      '۵ تم کامل و متفاوت در یک پکیج',
-      'صفحات ورود، ثبت‌نام، فراموشی رمز با جریان OTP',
-      'پنل مدیریت یکپارچه مشترک بین همه تم‌ها',
-      'حالت روشن و تاریک در هر تم',
-      'ساختار ماژولار و تفکیک‌شده برای شخصی‌سازی آسان',
-      'فونت‌های لوکال (وزیرمتن، Geist) بدون وابستگی به سرویس خارجی',
-      'کاملاً راست‌چین و واکنش‌گرا',
-      'بدون هیچ کد سمت سرور؛ اتصال آسان به هر API'
+      'سایت تک‌صفحه‌ای با اسکرول نرم و هایلایت خودکار منو',
+      'حالت تاریک و روشن با یک کلیک + تعیین حالت پیش‌فرض از پنل مدیریت',
+      '۱۷ فونت آماده فارسی با انتخاب جداگانه فونت متن و عناوین',
+      'بخش افتتاحیه سینمایی با افکت‌های ورود خیره‌کننده',
+      'هدر شناور (Dock) با منوی کشویی زیبا در موبایل',
+      'قابلیت نمایش ویدئو در پس‌زمینه بخش هیرو',
+      'مهارت‌ها با نوار پیشرفت متحرک و شمارنده اعداد فارسی',
+      'نمونه‌کارها با فیلتر دسته‌بندی و لایت‌باکس حرفه‌ای',
+      'گالری کارت‌های درگ‌پذیر با پشتیبانی کامل از لمس',
+      'نظرات مشتریان با کارت امضادار و آواتار حلقه‌ای چرخان',
+      'تعرفه‌ها با کارت ویژه برجسته و درگاه پرداخت تتر (USDT)',
+      'فرم تماس آجاکسی امن + صندوق پیام‌ها در پیشخوان وردپرس',
+      'بخش سوالات متداول آکاردئونی، تیم و وبلاگ مجله‌ای',
+      'شخصی‌سازی کامل از پیشخوان با بیش از ۱۵۰ گزینه تنظیمات',
+      'ابزار بکاپ‌گیری و بازگردانی تنظیمات (خروجی/ورودی JSON)',
+      'سازگار با المنتور و المنتور پرو (هدر، فوتر، تک‌مقاله و آرشیو)',
+      'حالت به‌زودی با صفحه اختصاصی و کد ۵۰۳ استاندارد',
+      'بهینه‌سازی سرعت: CSS/JS فشرده و بدون هیچ CDN خارجی'
     ],
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind', 'Vazirmatn', 'Geist']
+    tech: ['WordPress 6+', 'Elementor', 'PHP 7.4 - 8.x', 'Vazirmatn', 'Estedad', 'RTL']
   }
 ];
 
