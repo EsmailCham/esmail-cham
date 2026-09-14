@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوک‌می — دموی وب‌سایت شرکتی</title>
+  <meta name="description" content="دموی استاتیک قالب لوک‌می در نقش یک وب‌سایت شرکتی؛ فونت گندم، لحن رسمی و بخش‌های معرفی، خدمات و پروژه‌ها — بدون بک‌اند.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <link rel="stylesheet" href="css/demo.css?v=2.0">
+  <style>
+    /* پالت اختصاصی این دمو: مسی خنثی/گرافیتی برای لحن سازمانی */
+    :root {
+      --firouzeh: #5A6E76;
+      --firouzeh-2: #46565E;
+      --lapis: #35424A;
+      --gold: #8A7A4E;
+      --grad: linear-gradient(115deg, #5A6E76, #35424A 62%, #232B31);
+    }
+    [data-theme="dark"] {
+      --firouzeh: #9FB4BD;
+      --firouzeh-2: #8399A3;
+      --lapis: #C2CFD6;
+      --gold: #D9C58A;
+      --grad: linear-gradient(115deg, #9FB4BD, #C2CFD6);
+    }
+    body { --font-body: 'Gandom', 'Vazirmatn', sans-serif; }
+  </style>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('lookme-theme');
+        if (saved === 'dark') { document.documentElement.setAttribute('data-theme', 'dark'); }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body
+  data-home="../../products/lookme.html"
+  data-buy="https://www.rtl-theme.com/"
+  data-logo-src="assets/img/logos/arya.png" data-brand="آریا صنعت پارس"
+  data-brand-sub="گروه صنعتی"
+  data-cta="درخواست مشاوره"
+  data-nav='{"#hero":"خانه","#about":"درباره شرکت","#services":"خدمات","#projects":"پروژه‌ها","#faq":"سوالات متداول","#contact":"تماس"}'
+  data-fonts='{"گندم":"Gandom","وزیرمتن":"Vazirmatn","شبنم":"Shabnam","ساحل":"Sahel","صمیم":"Samim"}'
+  data-footer-about="گروه صنعتی آریا صنعت پارس؛ تولیدکننده تجهیزات صنعتی با بیش از دو دهه تجربه. این صفحه دموی استاتیک قالب لوک‌می است."
+  data-footer-copy="دموی قالب لوک‌می — نسخه شرکتی">
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <span class="preloader__star"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+  <span class="preloader__word">آریا صنعت پارس</span>
+  <span class="preloader__bar"><i></i></span>
+</div>
+
+<main id="main" class="site-main">
+
+  <section class="hero" id="hero">
+    <span class="hero__bg" aria-hidden="true"></span>
+    <span class="hero__glow hero__glow--1" aria-hidden="true"></span>
+    <span class="hero__glow hero__glow--2" aria-hidden="true"></span>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title" data-reveal style="--rd:90ms">
+          <span class="grad-text">تولید تجهیزات صنعتی</span>
+          <span class="rotator" id="lmRotator" data-words='["با استاندارد روز","با گارانتی واقعی","با تحویل به‌موقع"]'><span class="rotator__word">با استاندارد روز</span></span>
+        </h1>
+        <p class="hero__lead" data-reveal style="--rd:180ms">آریا صنعت پارس از سال ۱۳۸۱ در زمینه طراحی و تولید خطوط تولید و تجهیزات کارخانه‌ای فعالیت می‌کند؛ با تیم فنی مستقل، کارگاه اختصاصی و شبکه پشتیبانی سراسری.</p>
+        <div class="hero__cta" data-reveal style="--rd:260ms">
+          <a class="btn btn--primary btn__icon-spin" href="#contact">درخواست مشاوره
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3.2L11 13.2M21 3.2l-6.8 17.4-3.2-7.4-7.4-3.2z"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#projects">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg>
+            پروژه‌های ما
+          </a>
+        </div>
+        <div class="hero__stats" data-reveal style="--rd:340ms">
+          <div class="hero-stat">
+            <b><span class="fa-num" data-count="320">۳۲۰</span><span class="fa-num">+</span></b>
+            <span>پروژه صنعتی</span>
+          </div>
+          <div class="hero-stat">
+            <b><span class="fa-num" data-count="22">۲۲</span></b>
+            <span>سال سابقه</span>
+          </div>
+          <div class="hero-stat">
+            <b><span class="fa-num" data-count="140">۱۴۰</span><span class="fa-num">+</span></b>
+            <span>نیروی متخصص</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__media" data-reveal="right" style="--rd:200ms">
+        <div class="pframe pframe--main">
+          <img src="assets/img/company/factory-line.jpg" alt="تصویر اصلی صفحه" width="1600" height="1200" fetchpriority="high" decoding="async">
+        </div>
+        <div class="pframe pframe--sub">
+          <img src="assets/img/company/engineer.jpg" alt="تصویر کوچک" loading="lazy">
+        </div>
+        <div class="pdiamond">
+          <img src="assets/img/company/industrial-plant.jpg" alt="تصویر شاخص" loading="lazy">
+        </div>
+        <div class="hero__card">
+          <span class="hero__card__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6c.9 4.7 2.9 6.7 7.6 7.6-4.7.9-6.7 2.9-7.6 7.6-.9-4.7-2.9-6.7-7.6-7.6 4.7-.9 6.7-2.9 7.6-7.6z"/><path d="M18.8 14.9c.5 2.5 1.6 3.6 4.1 4.1-2.5.5-3.6 1.6-4.1 4.1-.5-2.5-1.6-3.6-4.1-4.1 2.5-.5 3.6-1.6 4.1-4.1z"/></svg></span>
+          <span>
+            <b>ایزو ۹۰۰۱</b>
+            <span>دارای گواهی کیفیت</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="about">
+    <div class="container about__grid">
+      <div class="about__media" data-reveal="right">
+        <div class="pframe" style="aspect-ratio:3/3.4">
+          <img src="assets/img/company/cnc-machine.jpg" alt="درباره شرکت" loading="lazy">
+        </div>
+        <div class="pframe pframe--sub2" style="aspect-ratio:1/1.05">
+          <img src="assets/img/company/steel-work.jpg" alt="تصویر مکمل" loading="lazy">
+        </div>
+        <div class="about__exp">
+          <b>۲۲+</b>
+          <span>سال تجربه تولید</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <div class="section-head" data-reveal="left">
+          <p class="eyebrow">درباره شرکت</p>
+          <h2 class="section-title"><span class="title-underline">مهندسی دقیق، تعهد روشن</span></h2>
+          <p class="muted">ما باور داریم اعتبار یک مجموعه صنعتی با کیفیت خروجی و شفافیت در تعهدات ساخته می‌شود. هر پروژه از مرحله طراحی مهندسی تا نصب و راه‌اندازی، با مستندسازی کامل و بازرسی کیفی مرحله‌ای پیش می‌رود.</p>
+        </div>
+        <ul class="about__list">
+          <li data-reveal="left" style="--rd:90ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>کارگاه اختصاصی ۶ هزار متری</b></span>
+          </li>
+          <li data-reveal="left" style="--rd:180ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>تیم مهندسی و بازرسی مستقل</b></span>
+          </li>
+          <li data-reveal="left" style="--rd:270ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>خدمات پس از فروش سراسری</b></span>
+          </li>
+          <li data-reveal="left" style="--rd:360ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>قرارداد با زمان‌بندی تضمین‌شده</b></span>
+          </li>
+        </ul>
+        <div class="about__sig" data-reveal style="--rd:200ms">
+          <span class="brand__star" aria-hidden="true" style="border-radius:50%;overflow:hidden;"><img src="assets/img/avatars/arya-ceo.jpg" alt="مهدی رجبی" loading="lazy"></span>
+          <span>
+            <b>مهدی رجبی</b>
+            <span>مدیرعامل گروه</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark stats-band" id="numbers">
+    <span class="stats-band__bg" aria-hidden="true" style="background-image:url('assets/img/company/plant-wide.jpg');"></span>
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">آریا صنعت در یک نگاه</p>
+        <h2 class="section-title"><span class="title-underline">ظرفیت‌های کارخانه</span></h2>
+      </div>
+      <div class="stats__grid">
+        <div class="stat-tile" data-reveal="zoom" style="--rd:100ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="320">۳۲۰</span><span class="fa-num">+</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">پروژه تحویل‌شده</span>
+        </div>
+        <div class="stat-tile" data-reveal="zoom" style="--rd:200ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="96">۹۶</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">درصد تمدید قرارداد</span>
+        </div>
+        <div class="stat-tile" data-reveal="zoom" style="--rd:300ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="31">۳۱</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">استان تحت پوشش</span>
+        </div>
+        <div class="stat-tile" data-reveal="zoom" style="--rd:400ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="24">۲۴</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">ساعت پاسخگویی اضطراری</span>
+        </div>
+      </div>
+
+      <div class="skills-wrap" style="max-width:760px;margin:64px auto 0">
+        <div class="section-head section-head--center" style="margin-bottom:36px" data-reveal>
+          <p class="eyebrow">حوزه‌های تخصصی</p>
+          <h3 class="section-title" style="font-size:clamp(1.4rem,2.6vw,2rem)">توانمندی‌های کارگاه</h3>
+        </div>
+        <div class="skills" data-reveal style="--rd:120ms">
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">ساخت تجهیزات مکانیکی</span><span class="skill__val">۹۵٪</span></div>
+            <div class="skill__bar"><i style="--v:95%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">برق و اتوماسیون صنعتی</span><span class="skill__val">۸۸٪</span></div>
+            <div class="skill__bar"><i style="--v:88%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">طراحی با CAD/CAM</span><span class="skill__val">۹۰٪</span></div>
+            <div class="skill__bar"><i style="--v:90%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">نصب و راه‌اندازی خطوط</span><span class="skill__val">۹۲٪</span></div>
+            <div class="skill__bar"><i style="--v:92%"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">خدمات ما</p>
+        <h2 class="section-title"><span class="title-underline">از طراحی تا راه‌اندازی</span></h2>
+      </div>
+      <div class="services__grid">
+        <article class="service-card" data-reveal style="--rd:80ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--cube" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.9l7.9 4.3v9.6L12 21.1l-7.9-4.3V7.2z"/><path d="M4.1 7.2L12 11.5l7.9-4.3M12 11.5v9.6"/></svg></span></span>
+          <h3>طراحی و مهندسی</h3>
+          <p>محاسبات، نقشه‌های اجرایی و شبیه‌سازی پیش از ساخت با نرم‌افزارهای مهندسی.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:160ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--globe" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4c2.7 2.4 4.2 5.3 4.2 8.6s-1.5 6.2-4.2 8.6c-2.7-2.4-4.2-5.3-4.2-8.6s1.5-6.2 4.2-8.6z"/></svg></span></span>
+          <h3>تولید و مونتاژ</h3>
+          <p>ساخت قطعات و خطوط تولید در کارگاه اختصاصی با کنترل کیفیت مرحله‌ای.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:240ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--shield" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.9l7.4 2.9v5.9c0 4.7-3.1 7.8-7.4 9.4-4.3-1.6-7.4-4.7-7.4-9.4V5.8z"/><path d="M9.1 11.9l2.1 2.1 3.9-4.2"/></svg></span></span>
+          <h3>بازرسی و تضمین کیفیت</h3>
+          <p>تست‌های استاندارد، مستندسازی و تحویل با گزارش بازرسی قابل استناد.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:320ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--chart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 19.8V9.8M10.1 19.8V4.8M16 19.8v-7.2M20.8 19.8H3.2"/></svg></span></span>
+          <h3>نصب و راه‌اندازی</h3>
+          <p>انجام پروژه در محل کارفرما، آموزش اپراتورها و تحویل نهایی مستند.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:400ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--clock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.1V12l3.3 2.1"/></svg></span></span>
+          <h3>نگهداری و تعمیرات</h3>
+          <p>قرارداد سرویس دوره‌ای، تامین قطعات یدکی و پشتیبانی اضطراری شبانه‌روزی.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:480ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--cart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.6" cy="19.4" r="1.5"/><circle cx="17.2" cy="19.4" r="1.5"/><path d="M3.2 4.2h2.5l2.5 10.8h9.8l2.8-7.6H6.2"/></svg></span></span>
+          <h3>تامین قطعات</h3>
+          <p>واردات و تامین قطعات یدکی خطوط تولید از برندهای معتبر جهانی.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">پروژه‌های شاخص</p>
+        <h2 class="section-title"><span class="title-underline">کارنامه‌ای که خودش حرف می‌زند</span></h2>
+      </div>
+      <div class="portfolio__filters" data-reveal>
+        <button class="pf-btn is-active" data-filter="*">همه</button>
+        <button class="pf-btn" data-filter="خطوط تولید">خطوط تولید</button>
+        <button class="pf-btn" data-filter="سازه فولادی">سازه فولادی</button>
+        <button class="pf-btn" data-filter="اتوماسیون">اتوماسیون</button>
+      </div>
+      <div class="portfolio__grid">
+        <figure class="pf-item" data-cat="خطوط تولید" data-reveal style="--rd:0ms">
+          <div class="pf-item__img"><img src="assets/img/company/deck-1.jpg" alt="خط تولید بسته‌بندی" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>خطوط تولید</span><h3>خط بسته‌بندی کارخانه لبنیات</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="سازه فولادی" data-reveal style="--rd:90ms">
+          <div class="pf-item__img"><img src="assets/img/company/deck-2.jpg" alt="سازه سقف سالن" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>سازه فولادی</span><h3>سازه سقف سالن ورزشی</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="اتوماسیون" data-reveal style="--rd:180ms">
+          <div class="pf-item__img"><img src="assets/img/company/deck-3.jpg" alt="کنترل خط تولید" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>اتوماسیون</span><h3>کنترل خط تولید مواد غذایی</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="خطوط تولید" data-reveal style="--rd:0ms">
+          <div class="pf-item__img"><img src="assets/img/company/deck-4.jpg" alt="ماشینآلات معدنی" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>خطوط تولید</span><h3>سنگ‌شکن واحد معدنی</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="اتوماسیون" data-reveal style="--rd:90ms">
+          <div class="pf-item__img"><img src="assets/img/company/deck-5.jpg" alt="پایش انرژی" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>اتوماسیون</span><h3>سامانه پایش انرژی کارخانه</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="سازه فولادی" data-reveal style="--rd:180ms">
+          <div class="pf-item__img"><img src="assets/img/company/deck-6.jpg" alt="پل ارتباطی صنعتی" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>سازه فولادی</span><h3>پل ارتباطی واحد صنعتی</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">فرآیند همکاری</p>
+        <h2 class="section-title"><span class="title-underline">مسیر پروژه از قرارداد تا تحویل</span></h2>
+      </div>
+      <div class="process__grid">
+        <div class="process-step" data-reveal style="--rd:110ms">
+          <span class="process-step__num">۱</span>
+          <h3>بررسی نیاز فنی</h3>
+          <p>جلسه کارشناسی، بازدید از محل و تدوین شرح دقیق نیازمندی‌ها.</p>
+        </div>
+        <div class="process-step" data-reveal style="--rd:220ms">
+          <span class="process-step__num">۲</span>
+          <h3>پیشنهاد و قرارداد</h3>
+          <p>ارائه پیشنهاد فنی و مالی با زمان‌بندی مرحله‌ای شفاف.</p>
+        </div>
+        <div class="process-step" data-reveal style="--rd:330ms">
+          <span class="process-step__num">۳</span>
+          <h3>ساخت و بازرسی</h3>
+          <p>تولید در کارگاه با گزارش پیشرفت هفتگی به کارفرما.</p>
+        </div>
+        <div class="process-step" data-reveal style="--rd:440ms">
+          <span class="process-step__num">۴</span>
+          <h3>تحویل و پشتیبانی</h3>
+          <p>نصب، آموزش، تحویل مستندات و شروع دوره گارانتی.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="testimonials">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">نظرات کارفرمایان</p>
+        <h2 class="section-title"><span class="title-underline">اعتماد، حاصل سال‌ها تعهد</span></h2>
+      </div>
+      <div class="testi__grid">
+        <div class="testi-card" data-reveal style="--rd:0ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>خط بسته‌بندی را دو هفته زودتر از موعد تحویل دادند و تیم راه‌اندازی سه روز کامل کنار اپراتورهای ما ماند.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatars/arya-t1.jpg" alt="فرشته قاسمی" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>فرشته قاسمی</b><span>مدیر کارخانه لبنیات سبزدشت</span></span>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--rd:90ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>گزارش بازرسی هفتگی و مستندسازی تحویل، کار حسابرسی ما را به‌شدت ساده کرد. همکاری برای فاز دوم هم ادامه دارد.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatars/arya-t2.jpg" alt="کامران دهقان" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>کامران دهقان</b><span>مدیر پروژه هلدینگ ساختمانی</span></span>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--rd:180ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۴ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>پشتیبانی اضطراری واقعاً شبانه‌روزی است؛ یک‌بار ساعت ۲ بامداد پاسخ گرفتیم و خرابی همان روز برطرف شد.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatars/arya-t3.jpg" alt="بابک شریفی" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>بابک شریفی</b><span>مسئول نگهداری واحد صنعتی</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="clients" style="padding-block:clamp(48px,6vw,72px)">
+    <div class="container">
+      <div class="section-head section-head--center" style="margin-bottom:36px" data-reveal>
+        <p class="eyebrow">کارفرمایان</p>
+        <h2 class="section-title" style="font-size:clamp(1.4rem,2.8vw,2.1rem)">سازمان‌هایی که به ما اعتماد کردند</h2>
+      </div>
+      <div class="clients__grid" data-reveal style="--rd:100ms">
+        <div class="client"><span>هلدینگ صنعتی کاوه</span></div>
+        <div class="client"><span>گروه غذایی سبزدشت</span></div>
+        <div class="client"><span>معدن و صنعت زر</span></div>
+        <div class="client"><span>شرکت پخش سراسری آریا</span></div>
+        <div class="client"><span>پتروشیمی خاورمیانه</span></div>
+        <div class="client"><span>سازمان تامین اجتماعی</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">سوالات متداول</p>
+        <h2 class="section-title"><span class="title-underline">پاسخ به پرسش‌های رایج</span></h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>حداقل زمان لازم برای یک پروژه چقدر است؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>پروژه‌های کوچک از ۴ هفته و خطوط کامل تولید از ۶ ماه شروع می‌شوند. زمان‌بندی دقیق در پیشنهاد فنی اعلام و ضمیمه قرارداد می‌شود.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>آیا خارج از تهران هم خدمات می‌دهید؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>بله؛ شبکه نصب و خدمات پس از فروش ما ۳۱ استان را پوشش می‌دهد و برای پروژه‌های بزرگ تیم مستقر در محل می‌فرستیم.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>گارانتی تجهیزات به چه شکل است؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>۱۲ تا ۲۴ ماه گارانتی بر اساس نوع تجهیز، به‌علاوه قرارداد نگهداری اختیاری با سرویس دوره‌ای و تضمین پاسخ حداکثر ۲۴ ساعته.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>شرایط پرداخت چگونه است؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>پیش‌پرداخت ۳۰٪، ۴۰٪ در مرحله تحویل تجهیز به کارگاه و ۳۰٪ پس از نصب و راه‌اندازی؛ پرداخت با تتر نیز برای سفارش‌های صادراتی ممکن است.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cta" style="padding-bottom:0">
+    <div class="container">
+      <div class="cta-band" data-reveal="zoom">
+        <h2>پروژه صنعتی در دستور دارید؟</h2>
+        <p>مشخصات فنی را برای ما بفرستید؛ کارشناسان ما حداکثر تا ۴۸ ساعت پیشنهاد فنی و مالی ارائه می‌کنند.</p>
+        <a class="btn btn--light" href="#contact">درخواست پیشنهاد فنی</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container contact__grid">
+      <div>
+        <div class="section-head" data-reveal="right" style="margin-bottom:0">
+          <p class="eyebrow">تماس با ما</p>
+          <h2 class="section-title"><span class="title-underline">در خدمت شما هستیم</span></h2>
+          <p class="muted">برای درخواست مشاوره، بازدید کارشناسی یا دریافت کاتالوگ محصولات، از راه‌های زیر با ما در ارتباط باشید.</p>
+        </div>
+        <div class="contact__list">
+          <div class="contact-item" data-reveal style="--rd:80ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--mail" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="5.6" width="17.6" height="12.8" rx="2.6"/><path d="M4.4 7.8l7.6 5.4 7.6-5.4"/></svg></span></span>
+            <span><b>ایمیل</b><a href="mailto:info@aryasanat.ir">info@aryasanat.ir</a></span>
+          </div>
+          <div class="contact-item" data-reveal style="--rd:160ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--phone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.2 3.8h3.6l1.7 4.3-2.2 1.7a12.6 12.6 0 0 0 5.9 5.9l1.7-2.2 4.3 1.7v3.6a1.9 1.9 0 0 1-2.1 1.9A16.8 16.8 0 0 1 3.3 5.9a1.9 1.9 0 0 1 1.9-2.1z"/></svg></span></span>
+            <span><b>تلفن</b><a href="tel:02155550000" style="direction:ltr;">۰۲۱-۵۵۵۵۰۰۰۰</a></span>
+          </div>
+          <div class="contact-item" data-reveal style="--rd:240ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.2s-7-5.6-7-10.4a7 7 0 1 1 14 0c0 4.8-7 10.4-7 10.4z"/><circle cx="12" cy="10.5" r="2.4"/></svg></span></span>
+            <span><b>آدرس</b><span>جاده مخصوص کرج، کیلومتر ۱۲، شهرک صنعتی، خیابان صنعت ۳</span></span>
+          </div>
+          <div class="contact-item" data-reveal style="--rd:320ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--clock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.1V12l3.3 2.1"/></svg></span></span>
+            <span><b>ساعات کاری</b><span>شنبه تا پنجشنبه، ۸ تا ۱۷</span></span>
+          </div>
+        </div>
+        <div class="contact-socials" data-reveal style="--rd:400ms">
+          <a href="#" aria-label="لینکدین" title="لینکدین"><span class="lm-icon lm-icon--linkedin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.4 8.6H3.2V21h3.2zM4.8 3.2a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.8 13.4c0-3.4-1.8-5-4.2-5-1.9 0-2.8 1.1-3.3 1.8V8.6H10V21h3.2v-6.2c0-1.6.3-3.1 2.3-3.1s2 1.8 2 3.2V21h3.3z"/></svg></span></a>
+          <a href="#" aria-label="تلگرام" title="تلگرام"><span class="lm-icon lm-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 4.4L2.9 11.6c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.5c.3.9 1.4 1.1 2 .4l2.6-2.7 4.7 3.5c.8.6 1.9.2 2.1-.8l2.6-15.2c.2-1.1-.8-1.9-1.7-1.4zM8.5 14.3l9.5-6.6c.3-.2.6.2.4.4l-7.7 7.2-.3 3.1z"/></svg></span></a>
+          <a href="#" aria-label="آپارات" title="آپارات"><span class="lm-icon lm-icon--aparat" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="8.2" r="1.6"/><circle cx="8.2" cy="12" r="1.6"/><circle cx="15.8" cy="12" r="1.6"/><circle cx="12" cy="15.8" r="1.6"/><circle cx="12" cy="12" r="1.2"/></svg></span></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal="left" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="c_name">نام و نام خانوادگی *</label>
+            <input type="text" id="c_name" name="c_name" required>
+          </div>
+          <div class="field">
+            <label for="c_email">ایمیل *</label>
+            <input type="email" id="c_email" name="c_email" required dir="ltr">
+          </div>
+        </div>
+        <div class="field">
+          <label for="c_phone">شماره تماس</label>
+          <input type="tel" id="c_phone" name="c_phone" dir="ltr">
+        </div>
+        <div class="field">
+          <label for="c_msg">شرح نیاز فنی *</label>
+          <textarea id="c_msg" name="c_msg" required></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit" style="width:100%;justify-content:center;">ارسال درخواست
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3.2L11 13.2M21 3.2l-6.8 17.4-3.2-7.4-7.4-3.2z"/></svg>
+        </button>
+        <p class="hp-field" style="position:absolute!important;inset-inline-end:-9999px!important;height:1px;overflow:hidden;" aria-hidden="true">
+          <label for="c_website">وب‌سایت</label>
+          <input type="text" id="c_website" name="c_website" tabindex="-1" autocomplete="off">
+        </p>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        <p class="form-note">با ارسال این فرم، با شرایط استفاده و حریم خصوصی موافقت می‌کنید.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/icons.js?v=2.0"></script>
+<script src="js/chrome.js?v=2.0"></script>
+<script src="js/main.js?v=2.0"></script>
+<script src="js/demo.js?v=2.0"></script>
+</body>
+</html>

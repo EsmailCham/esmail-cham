@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوک‌می — دموی قالب وردپرس تک‌صفحه‌ای (شرکتی)</title>
+  <meta name="description" content="دموی کامل قالب وردپرس تک‌صفحه‌ای لوک‌می: افتتاحیه سینمایی، هدر شناور، نمونه‌کارها با فیلتر، دِک درگ‌پذیر، نظرات، تعرفه‌ها و فرم تماس آجاکسی — بدون بک‌اند.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="دموی قالب لوک‌می — نسخه شرکتی">
+  <meta property="og:description" content="سایتِ تک‌صفحه‌ای، دقیقاً برای کسب‌وکار شما؛ دموی استاتیک قالب وردپرس لوک‌می.">
+  <link rel="icon" href="../../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+  <link rel="stylesheet" href="css/demo.css?v=1.0">
+  <script>
+    /* Apply saved theme before first paint to avoid flash */
+    (function () {
+      try {
+        var saved = localStorage.getItem('lookme-theme');
+        if (saved === 'dark') { document.documentElement.setAttribute('data-theme', 'dark'); }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body
+  data-home="../../products/lookme.html"
+  data-buy="https://www.rtl-theme.com/"
+  data-brand="لوک‌می"
+  data-brand-sub="استودیو دیجیتال"
+  data-cta="شروع پروژه"
+  data-nav='{"#hero":"خانه","#about":"درباره ما","#services":"خدمات","#portfolio":"نمونه‌کارها","#pricing":"تعرفه‌ها","#faq":"سوالات متداول","#contact":"تماس"}'
+  data-fonts='{"وزیرمتن":"Vazirmatn","استعداد":"Estedad","شبنم":"Shabnam","ساحل":"Sahel","صمیم":"Samim","گندم":"Gandom","تنها":"Tanha","پرستو":"Parastoo"}'
+  data-footer-about="استودیو خلاق لوک‌می؛ از ایده تا اجرا، کنار برندهای مدرن. این صفحه دموی استاتیک قالب است."
+  data-footer-copy="دموی قالب لوک‌می">
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <span class="preloader__star"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+  <span class="preloader__word">لوک‌می</span>
+  <span class="preloader__bar"><i></i></span>
+</div>
+
+<main id="main" class="site-main">
+
+  <!-- افتتاحیه سینمایی -->
+  <section class="cine" id="intro">
+    <div class="cine__media">
+      <img src="assets/img/intro-bg.webp" alt="" aria-hidden="true" width="1600" height="900" decoding="async">
+    </div>
+    <span class="cine__scrim" aria-hidden="true"></span>
+    <span class="cine__fade" aria-hidden="true"></span>
+    <div class="container cine__body">
+      <p class="cine__kicker" data-reveal>استودیو دیجیتال</p>
+      <h2 class="cine__title">
+        <span class="cine__line"><span>سایتِ تک‌صفحه‌ای</span></span>
+        <span class="cine__line"><span>دقیقاً برای کسب‌وکار شما</span></span>
+      </h2>
+      <p class="cine__sub" data-reveal style="--rd:280ms">طراحی اختصاصی، سرعت جهانی و هویتی که ماندگار است.</p>
+      <div class="cine__cta" data-reveal style="--rd:420ms">
+        <a class="btn btn--primary" href="#contact">شروع پروژه</a>
+        <a class="btn btn--light" href="#portfolio">تماشای نمونه‌کارها</a>
+      </div>
+      <div class="cine__chips" data-reveal style="--rd:560ms">
+        <span class="cine__chip"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6c.9 4.7 2.9 6.7 7.6 7.6-4.7.9-6.7 2.9-7.6 7.6-.9-4.7-2.9-6.7-7.6-7.6 4.7-.9 6.7-2.9 7.6-7.6z"/><path d="M18.8 14.9c.5 2.5 1.6 3.6 4.1 4.1-2.5.5-3.6 1.6-4.1 4.1-.5-2.5-1.6-3.6-4.1-4.1 2.5-.5 3.6-1.6 4.1-4.1z"/></svg>پشتیبانی واقعی</span>
+        <span class="cine__chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 19.8V9.8M10.1 19.8V4.8M16 19.8v-7.2M20.8 19.8H3.2"/></svg>سئوی فارسی</span>
+        <span class="cine__chip"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg>سرعت زیر یک ثانیه</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- هیرو -->
+  <section class="hero" id="hero">
+    <span class="hero__bg" aria-hidden="true"></span>
+    <span class="hero__glow hero__glow--1" aria-hidden="true"></span>
+    <span class="hero__glow hero__glow--2" aria-hidden="true"></span>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title" data-reveal style="--rd:90ms">
+          <span class="grad-text">ما برند شما را</span>
+          <span class="rotator" id="lmRotator" data-words='["می‌سازیم","می‌درخشانیم","متفاوت می‌کنیم"]'><span class="rotator__word">می‌سازیم</span></span>
+          با جزئیاتی که دیده می‌شود
+        </h1>
+        <p class="hero__lead" data-reveal style="--rd:180ms">استودیوی دیجیتال لوک‌می؛ جایی که طراحی مدرن، روایت درست برند و تکنولوژی روز به هم می‌رسند تا کسب‌وکار شما دیده شود.</p>
+        <div class="hero__cta" data-reveal style="--rd:260ms">
+          <a class="btn btn--primary btn__icon-spin" href="#contact">شروع پروژه
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3.2L11 13.2M21 3.2l-6.8 17.4-3.2-7.4-7.4-3.2z"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#portfolio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg>
+            نمونه‌کارها
+          </a>
+        </div>
+        <div class="hero__stats" data-reveal style="--rd:340ms">
+          <div class="hero-stat">
+            <b><span class="fa-num" data-count="120">۱۲۰</span></b>
+            <span>پروژه تحویل‌شده</span>
+          </div>
+          <div class="hero-stat">
+            <b><span class="fa-num" data-count="98">۹۸</span></b>
+            <span>درصد رضایت</span>
+          </div>
+          <div class="hero-stat">
+            <b><span class="fa-num" data-count="8">۸</span></b>
+            <span>سال تجربه</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__media" data-reveal="right" style="--rd:200ms">
+        <div class="pframe pframe--main">
+          <img src="assets/img/nasirmolk.webp" alt="تصویر اصلی صفحه" width="1600" height="1200" fetchpriority="high" decoding="async">
+        </div>
+        <div class="pframe pframe--sub">
+          <img src="assets/img/lotfollah.webp" alt="تصویر کوچک" loading="lazy">
+        </div>
+        <div class="pdiamond">
+          <img src="assets/img/azadi.webp" alt="تصویر شاخص" loading="lazy">
+        </div>
+        <div class="hero__card">
+          <span class="hero__card__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6c.9 4.7 2.9 6.7 7.6 7.6-4.7.9-6.7 2.9-7.6 7.6-.9-4.7-2.9-6.7-7.6-7.6 4.7-.9 6.7-2.9 7.6-7.6z"/><path d="M18.8 14.9c.5 2.5 1.6 3.6 4.1 4.1-2.5.5-3.6 1.6-4.1 4.1-.5-2.5-1.6-3.6-4.1-4.1 2.5-.5 3.6-1.6 4.1-4.1z"/></svg></span>
+          <span>
+            <b>طراحی اختصاصی</b>
+            <span>بدون قالب آماده</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- درباره ما -->
+  <section class="section section--alt" id="about">
+    <div class="container about__grid">
+      <div class="about__media" data-reveal="right">
+        <div class="pframe" style="aspect-ratio:3/3.4">
+          <img src="assets/img/naqshjahan.webp" alt="تصویر درباره ما" loading="lazy">
+        </div>
+        <div class="pframe pframe--sub2" style="aspect-ratio:1/1.05">
+          <img src="assets/img/choghazanbil.webp" alt="تصویر مکمل" loading="lazy">
+        </div>
+        <div class="about__exp">
+          <b>۸+</b>
+          <span>سال تجربه</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <div class="section-head" data-reveal="left">
+          <p class="eyebrow">درباره ما</p>
+          <h2 class="section-title"><span class="title-underline">طراحی گرم، حرفه‌ای و ماندگار</span></h2>
+          <p class="muted">ما یک استودیوی خلاق هستیم که محصولات دیجیتال مدرن می‌سازیم؛ با تایپوگرافی فارسیِ خوانا، سایه‌های گرم و چیدمانی که مخاطب حس کند این سایت مال خودش است. برای ما طراحی فقط زیبایی نیست؛ روایت برند شماست.</p>
+        </div>
+        <ul class="about__list">
+          <li data-reveal="left" style="--rd:90ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>طراحی اختصاصی و بدون قالب آماده</b></span>
+          </li>
+          <li data-reveal="left" style="--rd:180ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>تیم چندرشته‌ای: طراحی، محتوا، کد</b></span>
+          </li>
+          <li data-reveal="left" style="--rd:270ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>تحویل مرحله‌ای و شفاف</b></span>
+          </li>
+          <li data-reveal="left" style="--rd:360ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>پشتیبانی واقعی پس از تحویل</b></span>
+          </li>
+        </ul>
+        <div class="about__sig" data-reveal style="--rd:200ms">
+          <span class="brand__star" aria-hidden="true" style="border-radius:50%;overflow:hidden;"><img src="assets/img/portrait1.webp" alt="سارا محمدی" loading="lazy"></span>
+          <span>
+            <b>سارا محمدی</b>
+            <span>مدیر خلاقیت استودیو</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- خدمات -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">خدمات ما</p>
+        <h2 class="section-title"><span class="title-underline">از ایده تا اجرا، کنار شما</span></h2>
+      </div>
+      <div class="services__grid">
+        <article class="service-card" data-reveal style="--rd:80ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--palette" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2a8.8 8.8 0 0 0 0 17.6c1.5 0 2.2-.9 2.2-1.9 0-1.3-1-1.8-1-2.9 0-1.1 1-1.9 2.3-1.9h2.2a3.6 3.6 0 0 0 3.6-3.6c0-4.3-4.1-7.3-9.3-7.3z"/><circle cx="7.4" cy="10.8" r="1.05" fill="currentColor" stroke="none"/><circle cx="10.3" cy="7.2" r="1.05" fill="currentColor" stroke="none"/><circle cx="14.8" cy="7.2" r="1.05" fill="currentColor" stroke="none"/></svg></span></span>
+          <h3>طراحی هویت بصری</h3>
+          <p>لوگو، پالت رنگی و زبان بصری برند شما با نگاهی معاصر.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:160ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--code" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8.2 6.9L3.3 12l4.9 5.1M15.8 6.9L20.7 12l-4.9 5.1M13.7 4.3l-3.4 15.4"/></svg></span></span>
+          <h3>طراحی و توسعه وب</h3>
+          <p>سایت‌های سریع، ریسپانسیو و استاندارد با وردپرس و تکنولوژی‌های روز.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:240ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--megaphone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.2 10.8v3a1.5 1.5 0 0 0 1.5 1.5h1.4l4.4 3.9V5.4l-4.4 3.9H4.7a1.5 1.5 0 0 0-1.5 1.5z"/><path d="M14.6 9.2a4 4 0 0 1 0 6M17.6 6.6a8 8 0 0 1 0 11.4"/></svg></span></span>
+          <h3>دیجیتال مارکتینگ</h3>
+          <p>استراتژی محتوا و کمپین‌های هدفمند برای دیده‌شدن برند شما.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:320ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--pen" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.6 4.3l5.1 5.1L8.5 20.6H3.4v-5.1z"/><path d="M12.4 6.5l5.1 5.1"/></svg></span></span>
+          <h3>تولید محتوا</h3>
+          <p>متن، عکس و ویدیویی که روایت برند شما را برای مخاطب می‌سازد.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:400ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--cart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.6" cy="19.4" r="1.5"/><circle cx="17.2" cy="19.4" r="1.5"/><path d="M3.2 4.2h2.5l2.5 10.8h9.8l2.8-7.6H6.2"/></svg></span></span>
+          <h3>فروشگاه آنلاین</h3>
+          <p>راه‌اندازی فروشگاه اینترنتی با تجربه خریدی روان و قابل اعتماد.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+        <article class="service-card" data-reveal style="--rd:480ms">
+          <span class="service-card__icon"><span class="lm-icon lm-icon--chart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 19.8V9.8M10.1 19.8V4.8M16 19.8v-7.2M20.8 19.8H3.2"/></svg></span></span>
+          <h3>سئو و تحلیل</h3>
+          <p>تکنیکال سئو، سرعت و تحلیل داده برای رشد پایدار در گوگل.</p>
+          <a class="service-card__link" href="#contact"><span class="service-card__link__fill" aria-hidden="true"></span><span class="service-card__link__label">درخواست این خدمت</span><span class="service-card__link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 12H5.5M11.5 6l-6.5 6 6.5 6"/></svg></span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- آمار و مهارت‌ها -->
+  <section class="section section--dark stats-band" id="stats">
+    <span class="stats-band__bg" aria-hidden="true" style="background-image:url('assets/img/lotfollah.webp');"></span>
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">ما در یک نگاه</p>
+        <h2 class="section-title"><span class="title-underline">اعداد، خودشان حرف می‌زنند</span></h2>
+      </div>
+      <div class="stats__grid">
+        <div class="stat-tile" data-reveal="zoom" style="--rd:100ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="120">۱۲۰</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">پروژه تحویل‌شده</span>
+        </div>
+        <div class="stat-tile" data-reveal="zoom" style="--rd:200ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="98%">۹۸٪</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">رضایت مشتریان</span>
+        </div>
+        <div class="stat-tile" data-reveal="zoom" style="--rd:300ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="45+">۴۵+</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">برند همکار</span>
+        </div>
+        <div class="stat-tile" data-reveal="zoom" style="--rd:400ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="8">۸</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">سال تجربه</span>
+        </div>
+      </div>
+
+      <div class="skills-wrap" style="max-width:760px;margin:64px auto 0">
+        <div class="section-head section-head--center" style="margin-bottom:36px" data-reveal>
+          <p class="eyebrow">مهارت‌ها</p>
+          <h3 class="section-title" style="font-size:clamp(1.4rem,2.6vw,2rem)">در چه کارهایی تخصص داریم</h3>
+        </div>
+        <div class="skills" data-reveal style="--rd:120ms">
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">طراحی رابط و تجربه کاربری</span><span class="skill__val">۹۵٪</span></div>
+            <div class="skill__bar"><i style="--v:95%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">توسعه وب و وردپرس</span><span class="skill__val">۹۰٪</span></div>
+            <div class="skill__bar"><i style="--v:90%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">دیجیتال مارکتینگ</span><span class="skill__val">۸۵٪</span></div>
+            <div class="skill__bar"><i style="--v:85%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">عکاسی و تولید محتوا</span><span class="skill__val">۸۰٪</span></div>
+            <div class="skill__bar"><i style="--v:80%"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="awards" data-reveal style="--rd:160ms">
+        <p class="awards__title" style="grid-column:1/-1;text-align:center;color:#B0A093;font-size:.9rem;margin-bottom:6px">افتخارات و دستاوردها</p>
+        <div class="award">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b>برترین استودیو خلاق</b>
+          <span>۱۴۰۲</span>
+        </div>
+        <div class="award">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b>جایزه طراحی وب</b>
+          <span>۱۴۰۱</span>
+        </div>
+        <div class="award">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b>نشان تعالی خدمات</b>
+          <span>۱۴۰۰</span>
+        </div>
+        <div class="award">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b>برند محبوب کارآفرینان</b>
+          <span>۱۳۹۹</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- نمونه‌کارها -->
+  <section class="section section--alt" id="portfolio">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">نمونه‌کارها</p>
+        <h2 class="section-title"><span class="title-underline">پروژه‌هایی که به آن‌ها می‌نازیم</span></h2>
+      </div>
+      <div class="portfolio__filters" data-reveal>
+        <button class="pf-btn is-active" data-filter="*">همه</button>
+        <button class="pf-btn" data-filter="برندینگ">برندینگ</button>
+        <button class="pf-btn" data-filter="تبلیغات">تبلیغات</button>
+        <button class="pf-btn" data-filter="وب‌سایت">وب‌سایت</button>
+        <button class="pf-btn" data-filter="فروشگاه">فروشگاه</button>
+      </div>
+      <div class="portfolio__grid">
+        <figure class="pf-item" data-cat="برندینگ" data-reveal style="--rd:0ms">
+          <div class="pf-item__img"><img src="assets/img/nasirmolk.webp" alt="هویت بصری کافه رنگ" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>برندینگ</span><h3>هویت بصری کافه رنگ</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="تبلیغات" data-reveal style="--rd:90ms">
+          <div class="pf-item__img"><img src="assets/img/lotfollah.webp" alt="کمپین جواهرات یاقوت" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>تبلیغات</span><h3>کمپین جواهرات یاقوت</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="وب‌سایت" data-reveal style="--rd:180ms">
+          <div class="pf-item__img"><img src="assets/img/naqshjahan.webp" alt="وب‌سایت گالری نگار" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>وب‌سایت</span><h3>وب‌سایت گالری نگار</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="وب‌سایت" data-reveal style="--rd:0ms">
+          <div class="pf-item__img"><img src="assets/img/khaju.webp" alt="اپلیکیشن گردشگری سپاهان" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>وب‌سایت</span><h3>اپلیکیشن گردشگری سپاهان</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="برندینگ" data-reveal style="--rd:90ms">
+          <div class="pf-item__img"><img src="assets/img/azadi.webp" alt="ری‌برندینگ آریا تک" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>برندینگ</span><h3>ری‌برندینگ آریا تک</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="تبلیغات" data-reveal style="--rd:180ms">
+          <div class="pf-item__img"><img src="assets/img/hafez.webp" alt="بسته‌بندی عطر نارنج" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>تبلیغات</span><h3>بسته‌بندی عطر نارنج</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="تبلیغات" data-reveal style="--rd:0ms">
+          <div class="pf-item__img"><img src="assets/img/damavand.webp" alt="کمپین کوهستان قاف" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>تبلیغات</span><h3>کمپین کوهستان قاف</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="فروشگاه" data-reveal style="--rd:90ms">
+          <div class="pf-item__img"><img src="assets/img/siosepol.webp" alt="فروشگاه صنایع‌دستی پارسا" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>فروشگاه</span><h3>فروشگاه صنایع‌دستی پارسا</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="وب‌سایت" data-reveal style="--rd:180ms">
+          <div class="pf-item__img"><img src="assets/img/abyaneh.webp" alt="تور مجازی روستای آبیانه" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>وب‌سایت</span><h3>تور مجازی روستای آبیانه</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- گالری دِک درگ‌پذیر -->
+  <section class="section section--alt" id="gallery">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">گالری تصاویر</p>
+        <h2 class="section-title"><span class="title-underline">لحظه‌های ما</span></h2>
+      </div>
+      <div class="deck" id="lookmeDeck" data-reveal>
+        <div class="deck__stage">
+          <figure class="deck__card">
+            <img src="assets/img/nasirmolk.webp" alt="نور و کاشی" draggable="false" loading="lazy" decoding="async">
+            <figcaption class="deck__cap"><b>نور و کاشی</b><span>نصیرالملک، شیراز</span></figcaption>
+          </figure>
+          <figure class="deck__card">
+            <img src="assets/img/lotfollah.webp" alt="گنبد فیروزه" draggable="false" loading="lazy" decoding="async">
+            <figcaption class="deck__cap"><b>گنبد فیروزه</b><span>شیخ لطف‌الله، اصفهان</span></figcaption>
+          </figure>
+          <figure class="deck__card">
+            <img src="assets/img/khaju.webp" alt="پلِ شب‌های آب" draggable="false" loading="lazy" decoding="async">
+            <figcaption class="deck__cap"><b>پلِ شب‌های آب</b><span>خواجو، اصفهان</span></figcaption>
+          </figure>
+          <figure class="deck__card">
+            <img src="assets/img/kalut.webp" alt="کویرِ خاموش" draggable="false" loading="lazy" decoding="async">
+            <figcaption class="deck__cap"><b>کویرِ خاموش</b><span>کلوت‌های لوت</span></figcaption>
+          </figure>
+          <figure class="deck__card">
+            <img src="assets/img/hafez.webp" alt="سایه‌های حافظ" draggable="false" loading="lazy" decoding="async">
+            <figcaption class="deck__cap"><b>سایه‌های حافظ</b><span>حافظیه، شیراز</span></figcaption>
+          </figure>
+        </div>
+        <div class="deck__ui">
+          <div class="deck__bar" aria-hidden="true"><i></i></div>
+          <span class="deck__counter" aria-hidden="true"><b class="fa-num">۱</b><span>/</span><i class="fa-num">۵</i></span>
+          <div class="deck__nav">
+            <button class="deck__btn deck__btn--prev" data-deck="prev" type="button" aria-label="اسلاید قبلی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></button>
+            <button class="deck__btn deck__btn--next" data-deck="next" type="button" aria-label="اسلاید بعدی"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></button>
+          </div>
+        </div>
+        <p class="deck__hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg>بگیرید و بکشید</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- مسیر پروژه -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">مسیر پروژه</p>
+        <h2 class="section-title"><span class="title-underline">چهار قدم تا نتیجه</span></h2>
+      </div>
+      <div class="process__grid">
+        <div class="process-step" data-reveal style="--rd:110ms">
+          <span class="process-step__num">۱</span>
+          <h3>شنیدن و کشف</h3>
+          <p>نیازها، اهداف و مخاطبان شما را می‌شناسیم و تحلیل رقبا انجام می‌شود.</p>
+        </div>
+        <div class="process-step" data-reveal style="--rd:220ms">
+          <span class="process-step__num">۲</span>
+          <h3>استراتژی و طرح</h3>
+          <p>مفهوم، ساختار و طرح‌های اولیه را طراحی و با شما بازبینی می‌کنیم.</p>
+        </div>
+        <div class="process-step" data-reveal style="--rd:330ms">
+          <span class="process-step__num">۳</span>
+          <h3>ساخت و اجرا</h3>
+          <p>نسخه نهایی با کد تمیز، سرعت بالا و استانداردهای روز پیاده‌سازی می‌شود.</p>
+        </div>
+        <div class="process-step" data-reveal style="--rd:440ms">
+          <span class="process-step__num">۴</span>
+          <h3>تحویل و همراهی</h3>
+          <p>پروژه تحویل، آموزش داده می‌شود و پشتیبانی ما ادامه دارد.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- نظرات مشتریان -->
+  <section class="section section--alt" id="testimonials">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">نظرات مشتریان</p>
+        <h2 class="section-title"><span class="title-underline">آن‌ها که با ما ساختند</span></h2>
+      </div>
+      <div class="testi__grid">
+        <div class="testi-card" data-reveal style="--rd:0ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>تیم لوک‌می دقیقاً همان چیزی را ساخت که در ذهنمان بود؛ سایتی با هویتی که مشتری‌هایمان عاشقش شدند.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatar1.webp" alt="نیلوفر رستمی" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>نیلوفر رستمی</b><span>مدیر برند نگین</span></span>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--rd:90ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>از جلسه اول تا تحویل، همه‌چیز شفاف و حرفه‌ای بود. فروش آنلاین ما بعد از بازطراحی دو برابر شد.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatar2.webp" alt="امیر کاظمی" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>امیر کاظمی</b><span>بنیان‌گذار پارسا</span></span>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--rd:180ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>دقت در جزئیات و سلیقه‌ی بی‌نظیر تیم؛ برند ما بالاخره لباسی تناسب اندازه‌اش پیدا کرد.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatar3.webp" alt="مریم اسدی" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>مریم اسدی</b><span>مدیرعامل یاقوت</span></span>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--rd:0ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۴ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>پشتیبانی واقعی یعنی لوک‌می؛ هر بار در کمتر از یک ساعت پاسخ گرفتیم.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatar4.webp" alt="سعید مرادی" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>سعید مرادی</b><span>مدیر فنی آریا تک</span></span>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--rd:90ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>بهترین تصمیم امسال، سپردن وب‌سایت به این تیم بود. سرعت سایت از ۴ ثانیه به ۱ ثانیه رسید.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatar5.webp" alt="حسین توکلی" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>حسین توکلی</b><span>موسس سپاهان‌تراول</span></span>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--rd:180ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>محتوایی که برایمان تولید کردند، صدای برندمان را پیدا کرد. مخاطب این قدر درگیر نخوانده بود.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatar6.webp" alt="لیلا اکبری" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>لیلا اکبری</b><span>مدیر محتوای نارنج</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- مشتریان -->
+  <section class="section" id="clients" style="padding-block:clamp(48px,6vw,72px)">
+    <div class="container">
+      <div class="section-head section-head--center" style="margin-bottom:36px" data-reveal>
+        <p class="eyebrow">مشتریان و شرکا</p>
+        <h2 class="section-title" style="font-size:clamp(1.4rem,2.8vw,2.1rem)">برای این برندها کار کرده‌ایم</h2>
+      </div>
+      <div class="clients__grid" data-reveal style="--rd:100ms">
+        <div class="client"><span>هتل اسپیناس</span></div>
+        <div class="client"><span>کافه دلگون</span></div>
+        <div class="client"><span>فناوران داده گستر</span></div>
+        <div class="client"><span>گالری هنر معاصر</span></div>
+        <div class="client"><span>سفرهای ایرانیان</span></div>
+        <div class="client"><span>آموزشگاه نوآوران</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تعرفه‌ها -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">تعرفه‌ها</p>
+        <h2 class="section-title"><span class="title-underline">سرمایه‌گذاری شفاف</span></h2>
+      </div>
+      <div class="pricing__grid">
+        <div class="price-card" data-reveal style="--rd:110ms">
+          <h3>پایه</h3>
+          <p class="price-card__desc">برای شروع هویت دیجیتال</p>
+          <div class="price">
+            <span class="fa-num" data-count="18">۱۸</span>
+            <small>میلیون تومان</small>
+          </div>
+          <ul class="price-features">
+            <li class="inactive" style="--fi:0"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6.6 6.6l10.8 10.8M17.4 6.6L6.6 17.4"/></svg></span><span>طراحی یک‌صفحه‌ای مدرن</span></li>
+            <li class="inactive" style="--fi:1"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6.6 6.6l10.8 10.8M17.4 6.6L6.6 17.4"/></svg></span><span>ریسپانسیو کامل</span></li>
+            <li style="--fi:2"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>سئوی پایه</span></li>
+            <li style="--fi:3"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>یک نوبت بازبینی</span></li>
+            <li style="--fi:4"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>پشتیبانی ۱ ماهه</span></li>
+          </ul>
+          <a class="btn btn--ghost" href="#contact">سفارش این پلن</a>
+        </div>
+        <div class="price-card price-card--featured" data-reveal style="--rd:220ms">
+          <span class="price-card__badge">پیشنهاد ویژه ✦</span>
+          <h3>حرفه‌ای</h3>
+          <p class="price-card__desc">پرطرفدارترین انتخاب</p>
+          <div class="price">
+            <span class="fa-num" data-count="39">۳۹</span>
+            <small>میلیون تومان</small>
+          </div>
+          <ul class="price-features">
+            <li style="--fi:0"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>تمام امکانات پلن پایه</span></li>
+            <li style="--fi:1"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>طراحی اختصاصی هویت بصری</span></li>
+            <li style="--fi:2"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>تولید محتوای اولیه</span></li>
+            <li style="--fi:3"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>سئوی تکنیکال کامل</span></li>
+            <li style="--fi:4"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>پنل مدیریت فارسی</span></li>
+            <li style="--fi:5"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>پشتیبانی ۳ ماهه</span></li>
+          </ul>
+          <a class="btn btn--primary" href="#contact">سفارش این پلن</a>
+        </div>
+        <div class="price-card" data-reveal style="--rd:330ms">
+          <h3>سازمانی</h3>
+          <p class="price-card__desc">برای تیم‌ها و برندهای بزرگ</p>
+          <div class="price">
+            <span class="fa-num">تماس</span>
+            <small>قیمت‌گذاری اختصاصی</small>
+          </div>
+          <ul class="price-features">
+            <li style="--fi:0"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>تمام امکانات پلن حرفه‌ای</span></li>
+            <li style="--fi:1"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>فروشگاه آنلاین کامل</span></li>
+            <li style="--fi:2"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>اتصال به CRM و اتوماسیون</span></li>
+            <li style="--fi:3"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>آموزش تیم شما</span></li>
+            <li style="--fi:4"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span><span>پشتیبانی ۱۲ ماهه اختصاصی</span></li>
+          </ul>
+          <a class="btn btn--ghost" href="#contact">سفارش این پلن</a>
+        </div>
+      </div>
+      <div class="pay-tether" data-reveal>
+        <span class="pay-tether__icon"><span class="lm-icon lm-icon--sparkle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6c.9 4.7 2.9 6.7 7.6 7.6-4.7.9-6.7 2.9-7.6 7.6-.9-4.7-2.9-6.7-7.6-7.6 4.7-.9 6.7-2.9 7.6-7.6z"/><path d="M18.8 14.9c.5 2.5 1.6 3.6 4.1 4.1-2.5.5-3.6 1.6-4.1 4.1-.5-2.5-1.6-3.6-4.1-4.1 2.5-.5 3.6-1.6 4.1-4.1z"/></svg></span></span>
+        <span class="pay-tether__note">پرداخت با تتر (USDT) روی شبکه TRC20 پذیرفته می‌شود؛ پس از ثبت سفارش فاکتور برای شما صادر می‌گردد.</span>
+        <code class="wallet" id="walletAddr">TXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code>
+        <button class="btn btn--sm btn--ghost" id="copyWallet" type="button">کپی آدرس</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- تیم -->
+  <section class="section section--alt" id="team">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">تیم ما</p>
+        <h2 class="section-title"><span class="title-underline">آدم‌های پشت نورها</span></h2>
+      </div>
+      <div class="team__grid">
+        <div class="team-card" data-reveal style="--rd:90ms">
+          <div class="team-card__photo"><img src="assets/img/shams.webp" alt="سارا محمدی" loading="lazy"></div>
+          <h3>سارا محمدی</h3>
+          <span>مدیر خلاقیت</span>
+        </div>
+        <div class="team-card" data-reveal style="--rd:180ms">
+          <div class="team-card__photo"><img src="assets/img/amirchakhmaq.webp" alt="رضا نیک‌بخت" loading="lazy"></div>
+          <h3>رضا نیک‌بخت</h3>
+          <span>سرپرست طراحی</span>
+        </div>
+        <div class="team-card" data-reveal style="--rd:270ms">
+          <div class="team-card__photo"><img src="assets/img/abyaneh.webp" alt="الهام کاویانی" loading="lazy"></div>
+          <h3>الهام کاویانی</h3>
+          <span>مدیر محتوا</span>
+        </div>
+        <div class="team-card" data-reveal style="--rd:360ms">
+          <div class="team-card__photo"><img src="assets/img/milad.webp" alt="پویا فرهادی" loading="lazy"></div>
+          <h3>پویا فرهادی</h3>
+          <span>توسعه‌دهنده ارشد</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- سوالات متداول -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">سوالات متداول</p>
+        <h2 class="section-title"><span class="title-underline">پاسخ سوال‌های پرتکرار</span></h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>یک پروژه معمولاً چقدر طول می‌کشد؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>بسته به مقیاس پروژه، از ۲ هفته برای طرح پایه تا ۸ هفته برای پروژه‌های کامل. در جلسه اول، زمان‌بندی دقیق به شما ارائه می‌شود.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>آیا می‌توانم خودم سایت را مدیریت کنم؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>بله؛ همه سایت‌ها با پنل مدیریت فارسی و آموزش ویدیویی تحویل داده می‌شوند و می‌توانید محتوا را خودتان به‌روز کنید.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>پرداخت چطور انجام می‌شود؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>پروژه‌ها مرحله‌ای پرداخت می‌شوند: ۴۰٪ شروع کار، ۳۰٪ تایید طرح و ۳۰٪ تحویل نهایی. پرداخت با تتر نیز امکان‌پذیر است.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>اگر از طرح راضی نباشم چه می‌شود؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>در فاز طرح، بازبینی‌های نامحدود در محدوده توافق اولیه انجام می‌شود تا به نتیجه مطلوب برسیم.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>آیا سایت من سریع و سئوپسند خواهد بود؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>بله؛ نمره بالای ۹۰ در PageSpeed و رعایت کامل استانداردهای سئوی تکنیکال بخشی از قرارداد ماست.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>پس از تحویل، پشتیبانی به چه شکل است؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>هر پلن مدت پشتیبانی مشخصی دارد؛ در این مدت رفع اشکال، بروزرسانی‌های امنیتی و مشاوره رایگان است.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- وبلاگ -->
+  <section class="section section--alt" id="blog">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">وبلاگ</p>
+        <h2 class="section-title"><span class="title-underline">یادداشت‌های استودیو</span></h2>
+        <p class="muted">تجربه‌ها، آموزش‌ها و نگاه ما به طراحی و برندسازی.</p>
+      </div>
+      <div class="blog__grid">
+        <article class="post-card" data-reveal style="--rd:100ms">
+          <a class="post-card__thumb" href="#blog" aria-hidden="true" tabindex="-1"><img src="assets/img/hafez.webp" alt="" loading="lazy"></a>
+          <div class="post-card__body">
+            <div class="post-card__meta">
+              <span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="5" width="16.8" height="15.4" rx="2.6"/><path d="M8.2 3.2v3.6M15.8 3.2v3.6M3.6 10.2h16.8"/><circle cx="15.6" cy="14.6" r="1.2" fill="currentColor" stroke="none"/></svg></span>۵ مرداد ۱۴۰۵</span>
+              <span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.1" r="3.7"/><path d="M4.8 20.1a7.2 7.2 0 0 1 14.4 0"/></svg></span>سارا محمدی</span>
+            </div>
+            <h3><a href="#blog">لورم ایپسوم؟ ما متن واقعی می‌نویسیم</a></h3>
+            <a class="post-card__more" href="#blog">ادامه مطلب</a>
+          </div>
+        </article>
+        <article class="post-card" data-reveal style="--rd:200ms">
+          <a class="post-card__thumb" href="#blog" aria-hidden="true" tabindex="-1"><img src="assets/img/damavand.webp" alt="" loading="lazy"></a>
+          <div class="post-card__body">
+            <div class="post-card__meta">
+              <span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="5" width="16.8" height="15.4" rx="2.6"/><path d="M8.2 3.2v3.6M15.8 3.2v3.6M3.6 10.2h16.8"/><circle cx="15.6" cy="14.6" r="1.2" fill="currentColor" stroke="none"/></svg></span>۲۸ تیر ۱۴۰۵</span>
+              <span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.1" r="3.7"/><path d="M4.8 20.1a7.2 7.2 0 0 1 14.4 0"/></svg></span>پویا فرهادی</span>
+            </div>
+            <h3><a href="#blog">چرا سرعت سایت، برند شما را می‌سازد</a></h3>
+            <a class="post-card__more" href="#blog">ادامه مطلب</a>
+          </div>
+        </article>
+        <article class="post-card" data-reveal style="--rd:300ms">
+          <a class="post-card__thumb" href="#blog" aria-hidden="true" tabindex="-1"><img src="assets/img/khaju.webp" alt="" loading="lazy"></a>
+          <div class="post-card__body">
+            <div class="post-card__meta">
+              <span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="5" width="16.8" height="15.4" rx="2.6"/><path d="M8.2 3.2v3.6M15.8 3.2v3.6M3.6 10.2h16.8"/><circle cx="15.6" cy="14.6" r="1.2" fill="currentColor" stroke="none"/></svg></span>۱۶ تیر ۱۴۰۵</span>
+              <span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.1" r="3.7"/><path d="M4.8 20.1a7.2 7.2 0 0 1 14.4 0"/></svg></span>الهام کاویانی</span>
+            </div>
+            <h3><a href="#blog">راهنمای انتخاب پالت رنگ برند</a></h3>
+            <a class="post-card__more" href="#blog">ادامه مطلب</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="cta" style="padding-bottom:0">
+    <div class="container">
+      <div class="cta-band" data-reveal="zoom">
+        <h2>پروژه‌ای در ذهن دارید؟</h2>
+        <p>یک جلسه ۳۰ دقیقه‌ای رایگان بگیرید؛ درباره ایده‌تان حرف می‌زنیم و نقشه راه را برایتان می‌کشیم.</p>
+        <a class="btn btn--light" href="#contact">رزرو جلسه رایگان</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- تماس -->
+  <section class="section" id="contact">
+    <div class="container contact__grid">
+      <div>
+        <div class="section-head" data-reveal="right" style="margin-bottom:0">
+          <p class="eyebrow">تماس با ما</p>
+          <h2 class="section-title"><span class="title-underline">حرف اول را شما بزنید</span></h2>
+          <p class="muted">فرم را پر کنید یا مستقیم پیام دهید؛ معمولاً در کمتر از چند ساعت کاری پاسخ می‌دهیم.</p>
+        </div>
+        <div class="contact__list">
+          <div class="contact-item" data-reveal style="--rd:80ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--mail" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="5.6" width="17.6" height="12.8" rx="2.6"/><path d="M4.4 7.8l7.6 5.4 7.6-5.4"/></svg></span></span>
+            <span><b>ایمیل</b><a href="mailto:hello@lookme.ir">hello@lookme.ir</a></span>
+          </div>
+          <div class="contact-item" data-reveal style="--rd:160ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--phone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.2 3.8h3.6l1.7 4.3-2.2 1.7a12.6 12.6 0 0 0 5.9 5.9l1.7-2.2 4.3 1.7v3.6a1.9 1.9 0 0 1-2.1 1.9A16.8 16.8 0 0 1 3.3 5.9a1.9 1.9 0 0 1 1.9-2.1z"/></svg></span></span>
+            <span><b>تلفن</b><a href="tel:02191000000" style="direction:ltr;">۰۲۱-۹۱۰۰۰۰۰۰</a></span>
+          </div>
+          <div class="contact-item" data-reveal style="--rd:240ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.2s-7-5.6-7-10.4a7 7 0 1 1 14 0c0 4.8-7 10.4-7 10.4z"/><circle cx="12" cy="10.5" r="2.4"/></svg></span></span>
+            <span><b>آدرس</b><span>تهران، خیابان ولیعصر، بالاتر از پارک‌وی، پلاک ۱۲</span></span>
+          </div>
+          <div class="contact-item" data-reveal style="--rd:320ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--clock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.1V12l3.3 2.1"/></svg></span></span>
+            <span><b>ساعات کاری</b><span>شنبه تا چهارشنبه، ۹ تا ۱۸</span></span>
+          </div>
+        </div>
+        <div class="contact-socials" data-reveal style="--rd:400ms">
+          <a href="#" aria-label="اینستاگرام" title="اینستاگرام"><span class="lm-icon lm-icon--instagram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="4.6"/><circle cx="12" cy="12" r="3.9"/><circle cx="16.9" cy="7.1" r="1.05" fill="currentColor" stroke="none"/></svg></span></a>
+          <a href="#" aria-label="تلگرام" title="تلگرام"><span class="lm-icon lm-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 4.4L2.9 11.6c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.5c.3.9 1.4 1.1 2 .4l2.6-2.7 4.7 3.5c.8.6 1.9.2 2.1-.8l2.6-15.2c.2-1.1-.8-1.9-1.7-1.4zM8.5 14.3l9.5-6.6c.3-.2.6.2.4.4l-7.7 7.2-.3 3.1z"/></svg></span></a>
+          <a href="#" aria-label="واتساپ" title="واتساپ"><span class="lm-icon lm-icon--whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.6c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.1.5.2.6.4 0 .1 0 .7-.3 1.2z"/></svg></span></a>
+          <a href="#" aria-label="لینکدین" title="لینکدین"><span class="lm-icon lm-icon--linkedin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.4 8.6H3.2V21h3.2zM4.8 3.2a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.8 13.4c0-3.4-1.8-5-4.2-5-1.9 0-2.8 1.1-3.3 1.8V8.6H10V21h3.2v-6.2c0-1.6.3-3.1 2.3-3.1s2 1.8 2 3.2V21h3.3z"/></svg></span></a>
+          <a href="#" aria-label="آپارات" title="آپارات"><span class="lm-icon lm-icon--aparat" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="8.2" r="1.6"/><circle cx="8.2" cy="12" r="1.6"/><circle cx="15.8" cy="12" r="1.6"/><circle cx="12" cy="15.8" r="1.6"/><circle cx="12" cy="12" r="1.2"/></svg></span></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal="left" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="c_name">نام و نام خانوادگی *</label>
+            <input type="text" id="c_name" name="c_name" required>
+          </div>
+          <div class="field">
+            <label for="c_email">ایمیل *</label>
+            <input type="email" id="c_email" name="c_email" required dir="ltr">
+          </div>
+        </div>
+        <div class="field">
+          <label for="c_phone">شماره تماس</label>
+          <input type="tel" id="c_phone" name="c_phone" dir="ltr">
+        </div>
+        <div class="field">
+          <label for="c_msg">پیام شما *</label>
+          <textarea id="c_msg" name="c_msg" required></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit" style="width:100%;justify-content:center;">ارسال پیام
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3.2L11 13.2M21 3.2l-6.8 17.4-3.2-7.4-7.4-3.2z"/></svg>
+        </button>
+        <p class="hp-field" style="position:absolute!important;inset-inline-end:-9999px!important;height:1px;overflow:hidden;" aria-hidden="true">
+          <label for="c_website">وب‌سایت</label>
+          <input type="text" id="c_website" name="c_website" tabindex="-1" autocomplete="off">
+        </p>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        <p class="form-note">با ارسال این فرم، با شرایط استفاده و حریم خصوصی موافقت می‌کنید.</p>
+      </form>
+    </div>
+
+    <div class="contact__map" data-reveal>
+      <iframe src="https://maps.google.com/maps?q=tehran%20valiasr&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="340" frameborder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="نقشه موقعیت ما"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/icons.js?v=1.0"></script>
+<script src="js/chrome.js?v=1.0"></script>
+<script src="js/main.js?v=1.0"></script>
+<script src="js/demo.js?v=1.0"></script>
+</body>
+</html>

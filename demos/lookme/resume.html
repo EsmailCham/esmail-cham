@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوک‌می — دموی صفحه رزومه شخصی</title>
+  <meta name="description" content="دموی استاتیک قالب لوک‌می در نقش صفحه رزومه و نمونه‌کار شخصی؛ فونت صمیم، لحن صمیمی و بخش‌های مهارت، تجربه، نمونه‌کار و تماس.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <link rel="stylesheet" href="css/demo.css?v=2.0">
+  <style>
+    /* پالت اختصاصی این دمو: سبز خنثی و آرام برای لحن شخصی */
+    :root {
+      --firouzeh: #2F6B4F;
+      --firouzeh-2: #265941;
+      --lapis: #1F4A36;
+      --gold: #9A7B2D;
+      --grad: linear-gradient(115deg, #2F6B4F, #1F4A36 62%, #143426);
+    }
+    [data-theme="dark"] {
+      --firouzeh: #7FBF9E;
+      --firouzeh-2: #5FA381;
+      --lapis: #9ED4B7;
+      --gold: #D9BE7A;
+      --grad: linear-gradient(115deg, #7FBF9E, #9ED4B7);
+    }
+    body { --font-body: 'Samim', 'Vazirmatn', sans-serif; }
+  </style>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('lookme-theme');
+        if (saved === 'dark') { document.documentElement.setAttribute('data-theme', 'dark'); }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body
+  data-home="../../products/lookme.html"
+  data-buy="https://www.rtl-theme.com/"
+  data-logo-src="assets/img/logos/sara.png" data-brand="سارا محمدی"
+  data-brand-sub="طراح محصول"
+  data-cta="تماس با من"
+  data-nav='{"#hero":"خانه","#about":"درباره من","#skills":"مهارت‌ها","#work":"نمونه‌کارها","#journey":"مسیر حرفه‌ای","#faq":"سوالات متداول","#contact":"تماس"}'
+  data-fonts='{"صمیم":"Samim","وزیرمتن":"Vazirmatn","پرستو":"Parastoo","شبنم":"Shabnam","ساحل":"Sahel"}'
+  data-footer-about="صفحه شخصی سارا محمدی؛ طراحی محصول و تجربه کاربری. این صفحه دموی استاتیک قالب لوک‌می است."
+  data-footer-copy="دموی قالب لوک‌می — نسخه رزومه">
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <span class="preloader__star"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+  <span class="preloader__word">سارا محمدی</span>
+  <span class="preloader__bar"><i></i></span>
+</div>
+
+<main id="main" class="site-main">
+
+  <section class="hero" id="hero">
+    <span class="hero__bg" aria-hidden="true"></span>
+    <span class="hero__glow hero__glow--1" aria-hidden="true"></span>
+    <span class="hero__glow hero__glow--2" aria-hidden="true"></span>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title" data-reveal style="--rd:90ms">
+          <span class="grad-text">سلام، من سارا هستم؛</span>
+          <span class="rotator" id="lmRotator" data-words='["طراح محصول","دانشجوی دکتری","نویسنده وبلاگ"]'><span class="rotator__word">طراح محصول</span></span>
+        </h1>
+        <p class="hero__lead" data-reveal style="--rd:180ms">هشت سال است محصول‌های دیجیتال طراحی می‌کنم؛ از اپلیکیشن‌های سلامت تا پلتفرم‌های آموزشی. عاشق پژوهش کاربر هستم و باور دارم طراحی خوب، یعنی تصمیم‌هایی که کاربر را نمی‌آزارد.</p>
+        <div class="hero__cta" data-reveal style="--rd:260ms">
+          <a class="btn btn--primary btn__icon-spin" href="#contact">تماس با من
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3.2L11 13.2M21 3.2l-6.8 17.4-3.2-7.4-7.4-3.2z"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#work">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg>
+            نمونه‌کارها
+          </a>
+        </div>
+        <div class="hero__stats" data-reveal style="--rd:340ms">
+          <div class="hero-stat">
+            <b><span class="fa-num" data-count="40">۴۰</span><span class="fa-num">+</span></b>
+            <span>پروژه طراحی</span>
+          </div>
+          <div class="hero-stat">
+            <b><span class="fa-num" data-count="8">۸</span></b>
+            <span>سال تجربه</span>
+          </div>
+          <div class="hero-stat">
+            <b><span class="fa-num" data-count="12">۱۲</span></b>
+            <span>مقاله تخصصی</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__media" data-reveal="right" style="--rd:200ms">
+        <div class="pframe pframe--main">
+          <img src="assets/img/resume/desk-portrait.jpg" alt="عکس سارا محمدی" width="1600" height="1200" fetchpriority="high" decoding="async">
+        </div>
+        <div class="pframe pframe--sub">
+          <img src="assets/img/resume/workspace-wide.jpg" alt="تصویر کوچک" loading="lazy">
+        </div>
+        <div class="pdiamond">
+          <img src="assets/img/resume/sketch.jpg" alt="تصویر شاخص" loading="lazy">
+        </div>
+        <div class="hero__card">
+          <span class="hero__card__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6c.9 4.7 2.9 6.7 7.6 7.6-4.7.9-6.7 2.9-7.6 7.6-.9-4.7-2.9-6.7-7.6-7.6 4.7-.9 6.7-2.9 7.6-7.6z"/><path d="M18.8 14.9c.5 2.5 1.6 3.6 4.1 4.1-2.5.5-3.6 1.6-4.1 4.1-.5-2.5-1.6-3.6-4.1-4.1 2.5-.5 3.6-1.6 4.1-4.1z"/></svg></span>
+          <span>
+            <b>آماده همکاری</b>
+            <span>پروژه‌ای و تمام‌وقت</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="about">
+    <div class="container about__grid">
+      <div class="about__media" data-reveal="right">
+        <div class="pframe" style="aspect-ratio:3/3.4">
+          <img src="assets/img/resume/workspace-wide.jpg" alt="از سفرها" loading="lazy">
+        </div>
+        <div class="pframe pframe--sub2" style="aspect-ratio:1/1.05">
+          <img src="assets/img/resume/studio-desk.jpg" alt="تصویر مکمل" loading="lazy">
+        </div>
+        <div class="about__exp">
+          <b>۸+</b>
+          <span>سال در حوزه UX</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <div class="section-head" data-reveal="left">
+          <p class="eyebrow">درباره من</p>
+          <h2 class="section-title"><span class="title-underline">طراحی برای انسان‌های واقعی</span></h2>
+          <p class="muted">کارم را با روان‌شناسی شروع کردم و به طراحی محصول رسیدم؛ جایی که کنجکاوی و منطق به هم می‌رسند. وقتی کار نمی‌کنم، در حال پیاده‌روی طولانی، مطالعه کتاب یا نوشتن درباره تصمیم‌های طراحی هستم.</p>
+        </div>
+        <ul class="about__list">
+          <li data-reveal="left" style="--rd:90ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>مدرک کارشناسی ارشد طراحی تعاملی</b></span>
+          </li>
+          <li data-reveal="left" style="--rd:180ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>متخصص پژوهش کاربر و تست قابل استفاده بودن</b></span>
+          </li>
+          <li data-reveal="left" style="--rd:270ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>مدرس کارگاه‌های طراحی محصول</b></span>
+          </li>
+          <li data-reveal="left" style="--rd:360ms">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12.7l4.7 4.8L19.4 7"/></svg></span>
+            <span><b>فارسی و انگلیسی کاری</b></span>
+          </li>
+        </ul>
+        <div class="about__sig" data-reveal style="--rd:200ms">
+          <span class="brand__star" aria-hidden="true" style="border-radius:50%;overflow:hidden;"><img src="assets/img/avatars/sara-main.jpg" alt="سارا محمدی" loading="lazy"></span>
+          <span>
+            <b>سارا محمدی</b>
+            <span>طراح محصول، تهران</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark stats-band" id="skills">
+    <span class="stats-band__bg" aria-hidden="true" style="background-image:url('assets/img/resume/workspace-wide.jpg');"></span>
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">مهارت‌ها</p>
+        <h2 class="section-title"><span class="title-underline">ابزارهایی که هر روز با آن‌ها کار می‌کنم</span></h2>
+      </div>
+      <div class="stats__grid">
+        <div class="stat-tile" data-reveal="zoom" style="--rd:100ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="40">۴۰</span><span class="fa-num">+</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">پروژه تحویل‌شده</span>
+        </div>
+        <div class="stat-tile" data-reveal="zoom" style="--rd:200ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="300">۳۰۰</span><span class="fa-num">+</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">ساعت مصاحبه با کاربر</span>
+        </div>
+        <div class="stat-tile" data-reveal="zoom" style="--rd:300ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="12">۱۲</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">مقاله منتشرشده</span>
+        </div>
+        <div class="stat-tile" data-reveal="zoom" style="--rd:400ms">
+          <span class="lm-icon lm-icon--star8" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="1.5" transform="rotate(45 12 12)"/></svg></span>
+          <b><span class="fa-num" data-count="6">۶</span></b>
+          <i class="stat-tile__dot" aria-hidden="true"></i>
+          <span class="stat-tile__label">کارگاه برگزارشده</span>
+        </div>
+      </div>
+
+      <div class="skills-wrap" style="max-width:760px;margin:64px auto 0">
+        <div class="section-head section-head--center" style="margin-bottom:36px" data-reveal>
+          <p class="eyebrow">تخصص‌ها</p>
+          <h3 class="section-title" style="font-size:clamp(1.4rem,2.6vw,2rem)">در چه کارهایی حرفه‌ای‌ام</h3>
+        </div>
+        <div class="skills" data-reveal style="--rd:120ms">
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">پژوهش و تست کاربر</span><span class="skill__val">۹۵٪</span></div>
+            <div class="skill__bar"><i style="--v:95%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">طراحی رابط (Figma)</span><span class="skill__val">۹۰٪</span></div>
+            <div class="skill__bar"><i style="--v:90%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">طراحی اطلاعات و وایرفریم</span><span class="skill__val">۸۸٪</span></div>
+            <div class="skill__bar"><i style="--v:88%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span class="skill__name">طراحی HTML/CSS پایه</span><span class="skill__val">۷۵٪</span></div>
+            <div class="skill__bar"><i style="--v:75%"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="work">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">نمونه‌کارها</p>
+        <h2 class="section-title"><span class="title-underline">پروژه‌هایی که دوستشان دارم</span></h2>
+      </div>
+      <div class="portfolio__filters" data-reveal>
+        <button class="pf-btn is-active" data-filter="*">همه</button>
+        <button class="pf-btn" data-filter="اپلیکیشن">اپلیکیشن</button>
+        <button class="pf-btn" data-filter="پلتفرم وب">پلتفرم وب</button>
+        <button class="pf-btn" data-filter="پژوهش">پژوهش</button>
+      </div>
+      <div class="portfolio__grid">
+        <figure class="pf-item" data-cat="اپلیکیشن" data-reveal style="--rd:0ms">
+          <div class="pf-item__img"><img src="assets/img/resume/work-1.jpg" alt="اپلیکیشن سلامت" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>اپلیکیشن</span><h3>اپلیکیشن پیگیری دارو</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="پلتفرم وب" data-reveal style="--rd:90ms">
+          <div class="pf-item__img"><img src="assets/img/resume/work-2.jpg" alt="پلتفرم آموزش" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>پلتفرم وب</span><h3>پلتفرم آموزش آنلاین درسا</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="پژوهش" data-reveal style="--rd:180ms">
+          <div class="pf-item__img"><img src="assets/img/resume/studio-desk.jpg" alt="پژوهش کاربر" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>پژوهش</span><h3>پژوهش رفتار پرداخت موبایلی</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="اپلیکیشن" data-reveal style="--rd:0ms">
+          <div class="pf-item__img"><img src="assets/img/resume/sketch.jpg" alt="اپلیکیشن کتاب" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>اپلیکیشن</span><h3>اپلیکیشن کتاب صوتی نوار</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="پلتفرم وب" data-reveal style="--rd:90ms">
+          <div class="pf-item__img"><img src="assets/img/resume/work-4.jpg" alt="داشبورد فروش" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>پلتفرم وب</span><h3>داشبورد مدیریت فروشگاهی</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+        <figure class="pf-item" data-cat="پژوهش" data-reveal style="--rd:180ms">
+          <div class="pf-item__img"><img src="assets/img/resume/work-5.jpg" alt="کاوش در دسترس‌پذیری" loading="lazy"></div>
+          <figcaption class="pf-item__overlay"><span>پژوهش</span><h3>مطالعه دسترس‌پذیری بانکداری</h3></figcaption>
+          <span class="pf-item__zoom"><span class="lm-icon lm-icon--zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="M20.4 20.4l-4.7-4.7M8.4 10.8h4.8M10.8 8.4v4.8"/></svg></span></span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">مسیر حرفه‌ای</p>
+        <h2 class="section-title"><span class="title-underline">از جایی که شروع کردم</span></h2>
+      </div>
+      <div class="process__grid">
+        <div class="process-step" data-reveal style="--rd:110ms">
+          <span class="process-step__num">۱</span>
+          <h3>۱۳۹۷ — طراح رابط، استودیو نگار</h3>
+          <p>اولین شغل حرفه‌ای‌ام؛ طراحی سایت برای مشتریان کوچک و یادگیری سریع از بازخوردهای واقعی.</p>
+        </div>
+        <div class="process-step" data-reveal style="--rd:220ms">
+          <span class="process-step__num">۲</span>
+          <h3>۱۴۰۰ — طراح محصول، مدتک</h3>
+          <p>عضو تیم محصول اپلیکیشن بانکی؛ مالکیت فرآیند ثبت‌نام و کاهش ۳۰٪ خطای کاربران.</p>
+        </div>
+        <div class="process-step" data-reveal style="--rd:330ms">
+          <span class="process-step__num">۳</span>
+          <h3>۱۴۰۲ — طراح ارشد، سلامت‌پlus</h3>
+          <p>رهبری طراحی اپلیکیشن سلامت با تیمی پنج‌نفره و راه‌اندازی سیستم دیزاین داخلی.</p>
+        </div>
+        <div class="process-step" data-reveal style="--rd:440ms">
+          <span class="process-step__num">۴</span>
+          <h3>۱۴۰۴ — مستقل</h3>
+          <p>همکاری با استارتاپ‌ها به‌عنوان طراح مستقل؛ پژوهش، طراحی و تست از صفر تا انتشار.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="testimonials">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">نظرات همکاران</p>
+        <h2 class="section-title"><span class="title-underline">آن‌ها که با من کار کردند</span></h2>
+      </div>
+      <div class="testi__grid">
+        <div class="testi-card" data-reveal style="--rd:0ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>سارا تنها کسی است که دیده‌ام قبل از طراحی، اول سوال درست را می‌پرسد. خروجی کارش همیشه دقیق‌تر از چیزی بود که تصور می‌کردیم.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatars/sara-t1.jpg" alt="امیر کاظمی" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>امیر کاظمی</b><span>مدیر محصول، مدتک</span></span>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--rd:90ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>همکاری با سارا یادم داد که پژوهش کاربر عجله را کم می‌کند، نه زیاد. پروژه ما با اطمینان و بدون بازکاری پیش رفت.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatars/sara-t2.jpg" alt="مریم اسدی" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>مریم اسدی</b><span>بنیان‌گذار سلامت‌پlus</span></span>
+          </div>
+        </div>
+        <div class="testi-card" data-reveal style="--rd:180ms">
+          <span class="testi-card__quote" aria-hidden="true"><span class="lm-icon lm-icon--quote" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 7C7.1 8 5.4 10.2 5.4 13.4v4.1h4.9v-4.9H7.9c.1-2 1-3.3 2.9-4.1z"/><path d="M18.8 7c-3.1 1-4.8 3.2-4.8 6.4v4.1h4.9v-4.9h-2.4c.1-2 1-3.3 2.9-4.1z"/></svg></span></span>
+          <div class="stars" aria-label="۵ ستاره"><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><span class="lm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.9l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9z"/></svg></span></div>
+          <p>کارگاه UX که برای تیم ما برگزار کرد، واقعاً چشم‌بازکننده بود؛ بعد از آن جلسه‌های طراحی ما حسابی عوض شد.</p>
+          <div class="testi-card__author">
+            <span class="testi-card__avatar"><img src="assets/img/avatars/sara-t3.jpg" alt="لیلا اکبری" loading="lazy" decoding="async"></span>
+            <span class="testi-card__id"><b>لیلا اکبری</b><span>مدیر محصول، آموزشگاه نویان</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">سوالات متداول</p>
+        <h2 class="section-title"><span class="title-underline">پرسش‌هایی که زیاد می‌شوم</span></h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>با چه مدل همکاری‌ای کار می‌کنی؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>بیشتر پروژه‌ای با بازه زمانی مشخص؛ برای استارتاپ‌های کوچک، همکاری ماهانه هم دارم. همیشه قبل از شروع، یک جلسه آشنایی رایگان می‌گذاریم.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>روند کاری یک پروژه چطور است؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>کشف و پژوهش، طراحی اطلاعات، طراحی رابط، تست و تحویل به تیم توسعه. در هر مرحله نسخه قابل بازبینی تحویل می‌دهم و بازخورد شما بخشی از فرآیند است.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>می‌توانی فقط بخش پژوهش پروژه را انجام دهی؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>بله؛ بسیاری از تیم‌ها فقط برای مصاحبه کاربر، تست قابل استفاده بودن یا ممیزی UX با من کار می‌کنند و خروجی را خودشان اجرا می‌کنند.</p></div></div>
+        </div>
+        <div class="faq-item" data-reveal>
+          <button class="faq-q" type="button" aria-expanded="false"><span>چه زمانی می‌توانی پروژه جدید شروع کنی؟</span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.6 9.3l6.4 6.2 6.4-6.2"/></svg></span></button>
+          <div class="faq-a"><div><p>معمولاً دو تا سه هفته بعد از توافق. اگر پروژه شما فوری است، پیام بده؛ اگر بتوانم ظرفیت آزاد کنم، اعلام می‌کنم.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cta" style="padding-bottom:0">
+    <div class="container">
+      <div class="cta-band" data-reveal="zoom">
+        <h2>پروژه‌ای در ذهن داری؟</h2>
+        <p>برایم تعریف کن چه می‌سازی؛ معمولاً ظرف یک روز کاری پاسخ می‌دهم و اگر مناسب بود، جلسه رایگان می‌گذاریم.</p>
+        <a class="btn btn--light" href="#contact">ارسال پیام</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container contact__grid">
+      <div>
+        <div class="section-head" data-reveal="right" style="margin-bottom:0">
+          <p class="eyebrow">تماس با من</p>
+          <h2 class="section-title"><span class="title-underline">خوشحال می‌شوم صحبت کنیم</span></h2>
+          <p class="muted">برای پروژه، مشاوره یا حتی فقط یک سوال طراحی، از هر کدام از راه‌های زیر در دسترس هستم.</p>
+        </div>
+        <div class="contact__list">
+          <div class="contact-item" data-reveal style="--rd:80ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--mail" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="5.6" width="17.6" height="12.8" rx="2.6"/><path d="M4.4 7.8l7.6 5.4 7.6-5.4"/></svg></span></span>
+            <span><b>ایمیل</b><a href="mailto:hi@saramohammadi.design">hi@saramohammadi.design</a></span>
+          </div>
+          <div class="contact-item" data-reveal style="--rd:240ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.2s-7-5.6-7-10.4a7 7 0 1 1 14 0c0 4.8-7 10.4-7 10.4z"/><circle cx="12" cy="10.5" r="2.4"/></svg></span></span>
+            <span><b>موقعیت</b><span>تهران — دورکاری و حضوری در پروژه‌های محلی</span></span>
+          </div>
+          <div class="contact-item" data-reveal style="--rd:320ms">
+            <span class="contact-item__icon"><span class="lm-icon lm-icon--clock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.1V12l3.3 2.1"/></svg></span></span>
+            <span><b>پاسخ‌دهی</b><span>شنبه تا چهارشنبه، معمولاً ظرف ۲۴ ساعت</span></span>
+          </div>
+        </div>
+        <div class="contact-socials" data-reveal style="--rd:400ms">
+          <a href="#" aria-label="لینکدین" title="لینکدین"><span class="lm-icon lm-icon--linkedin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.4 8.6H3.2V21h3.2zM4.8 3.2a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.8 13.4c0-3.4-1.8-5-4.2-5-1.9 0-2.8 1.1-3.3 1.8V8.6H10V21h3.2v-6.2c0-1.6.3-3.1 2.3-3.1s2 1.8 2 3.2V21h3.3z"/></svg></span></a>
+          <a href="#" aria-label="اینستاگرام" title="اینستاگرام"><span class="lm-icon lm-icon--instagram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="4.6"/><circle cx="12" cy="12" r="3.9"/><circle cx="16.9" cy="7.1" r="1.05" fill="currentColor" stroke="none"/></svg></span></a>
+          <a href="#" aria-label="تلگرام" title="تلگرام"><span class="lm-icon lm-icon--telegram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 4.4L2.9 11.6c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.5c.3.9 1.4 1.1 2 .4l2.6-2.7 4.7 3.5c.8.6 1.9.2 2.1-.8l2.6-15.2c.2-1.1-.8-1.9-1.7-1.4zM8.5 14.3l9.5-6.6c.3-.2.6.2.4.4l-7.7 7.2-.3 3.1z"/></svg></span></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal="left" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="c_name">نام تو *</label>
+            <input type="text" id="c_name" name="c_name" required>
+          </div>
+          <div class="field">
+            <label for="c_email">ایمیل *</label>
+            <input type="email" id="c_email" name="c_email" required dir="ltr">
+          </div>
+        </div>
+        <div class="field">
+          <label for="c_msg">پیامت *</label>
+          <textarea id="c_msg" name="c_msg" required></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit" style="width:100%;justify-content:center;">ارسال پیام
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3.2L11 13.2M21 3.2l-6.8 17.4-3.2-7.4-7.4-3.2z"/></svg>
+        </button>
+        <p class="hp-field" style="position:absolute!important;inset-inline-end:-9999px!important;height:1px;overflow:hidden;" aria-hidden="true">
+          <label for="c_website">وب‌سایت</label>
+          <input type="text" id="c_website" name="c_website" tabindex="-1" autocomplete="off">
+        </p>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        <p class="form-note">با ارسال این فرم، با شرایط استفاده و حریم خصوصی موافقت می‌کنی.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/icons.js?v=2.0"></script>
+<script src="js/chrome.js?v=2.0"></script>
+<script src="js/main.js?v=2.0"></script>
+<script src="js/demo.js?v=2.0"></script>
+</body>
+</html>
